@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container_home {
+	/* margin: 0 auto;
+	min-height: 100vh;
+	border: 1px solid #222; */
+	width: min(90vw, 800px);
+	margin: auto;
+}
+
+.titulo-home {
+	width: 300px;
+	margin-top: 10px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.titulo-home h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 1.9rem;
+}
+
+h2 img {
+	height: 2.4rem;
+	margin: 0 5px -7px 0;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 1rem;
+}
