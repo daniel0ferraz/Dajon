@@ -4,9 +4,7 @@ import "./styles.css"
 export default function Header() {
   return (
     <>
-
       <header>
-        
         <h1>Dajon</h1>
         <div className="links">
           <span>

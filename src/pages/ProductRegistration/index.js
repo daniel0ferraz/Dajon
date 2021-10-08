@@ -57,9 +57,7 @@ export default function ProductRegistration() {
   return (
     <>
       <S.ContainerForm>
-
-
-
+        
         <S.Form onSubmit={onSubmit} enableReinitialize={true}>
     
           <S.TituloHome>
