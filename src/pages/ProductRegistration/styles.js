@@ -8,7 +8,7 @@ export const ContainerForm = styled.div`
 export const Form = styled.form`
 	margin-top: 40px;
 	/* width: 70%; */
-	border: 1px solid #000cff;
+	border: 1px solid #b2b2b2;
 	border-radius: 5px;
 	padding: 20px;
 `;

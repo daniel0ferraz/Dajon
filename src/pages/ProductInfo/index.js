@@ -3,8 +3,8 @@ import { useHistory, useParams } from 'react-router';
 import { useState } from 'react/cjs/react.development';
 import axios from 'axios';
 
-export default function ProductInfo(){
-  
+export default function ProductInfo() {
+
   const history = useHistory();
   const { id } = useParams()
   const [product, setProduct] = useState([]);
@@ -17,14 +17,14 @@ export default function ProductInfo(){
       });
   }, [id]);
 
-  return(
+  return (
     <>
 
-    <h1>Informações produto</h1>
+      <h1>Informações produto</h1>
 
-    <article>
-       <h2>{product.nome}</h2>
-    </article>
+      <article>
+        <h2>{product.nome}</h2>
+      </article>
 
     </>
   )
