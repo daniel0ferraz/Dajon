@@ -15,9 +15,8 @@ export default function Routes() {
 					<Route path='/' exact component={Home} />
 
 					<Route path='/home' exact component={Home} />
-
-					{/* <Route path='/produto/:id' component={ProductRegistration} /> */}
-					<Route path='/produto' component={ProductInfo} />
+					<Route path='/produto/:id' component={ProductInfo} />
+					<Route path='editar-produto/:id' component={ProductRegistration} />
 					<Route path='/cadastro-produto' component={ProductRegistration} />
 
 					<Route component={() => <div>Page 404!</div>} />

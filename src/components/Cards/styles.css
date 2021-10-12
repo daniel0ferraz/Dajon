@@ -29,8 +29,7 @@
 	margin: 10px 0 10px 0;
 }
 
-.card-info span,
-h1 {
+.card-info h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	overflow: hidden;
@@ -46,7 +45,33 @@ h1 {
 	font-size: 12px;
 	line-height: 22px;
 	color: #625f5f;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-weight: 400;
+} 
+
+.card-info .product-category--Acessorios{
+	color: #fff;
+	background-color: #2773bb;
 }
+.card-info .product-category--Calçados{
+	color: #fff;
+	background-color: #27bbac;
+}
+.card-info .product-category--Eletronicos{
+	color: #fff;
+	background-color: #24dc71d4;
+}
+.card-info .product-category--Esportivos{
+	color: #fff;
+	background-color: #c9dc24d4;
+}
+.card-info .product-category--Roupas{
+	color: #fff;
+	background-color: #dc245bd4;
+}
+
+
 
 .card-info > h1 {
 	font-size: 15px;
@@ -69,7 +94,7 @@ h1 {
 	margin-bottom: 5px;
 }
 
-.card-price button {
+.card-price > button {
 	width: 104px;
 	height: 32px;
 	border: 1px solid  #000cff ;
@@ -84,3 +109,4 @@ h1 {
 	background: none;
 	cursor: pointer;
 }
+

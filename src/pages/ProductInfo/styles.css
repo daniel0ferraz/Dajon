@@ -1,0 +1,124 @@
+.container_home {
+	/* margin: 0 auto;
+	min-height: 100vh;
+	border: 1px solid #222; */
+	width: min(90vw, 800px);
+	margin: auto;
+}
+
+.title-home {
+	margin-top: 15px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.title-home h2 {
+	font-weight: 700;
+	font-size: 1.9rem;
+}
+
+/* section */
+
+.list-product {
+	margin-top: 20px;
+}
+
+.product-card {
+	border-radius: 8px;
+	border: 1px solid #c3c3c3;
+	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+	display: flex;
+	padding: 15px;
+	align-items: flex-start;
+}
+
+.product-card-image {
+	max-width: 100px;
+	margin-right: 20px;
+}
+
+.product-card-info {
+	flex-grow: 1;
+}
+
+.product-card-title{
+  font-size: 16px;
+  color: #2C2E50;
+  font-weight: 500;
+}
+
+.product-card-price {
+	font-size: 26px;
+	font-weight: 700;
+	color: #000cff;
+}
+.product-card-footer {
+	display: flex;
+	align-items: center;
+}
+
+.product-card-footer span {
+	font-size: 12px;
+	line-height: 22px;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-weight: 400;
+} 
+
+.product-card-category {
+  background-color: #95A5A6;
+  color:rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  max-width: 345px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+ .product-category--Acessorios{
+	color: #fff;
+	background-color: #2773bb;
+}
+ .product-category--Calçados{
+	color: #fff;
+	background-color: #27bbac;
+}
+ .product-category--Eletronicos{
+	color: #fff;
+	background-color: #24dc71d4;
+}
+ .product-category--Esportivos{
+	color: #fff;
+	background-color: #c9dc24d4;
+}
+ .product-category--Roupas{
+	color: #fff;
+	background-color: #dc245bd4;
+}
+
+.product-card-count{
+  margin-left: auto;
+  margin-right: 20px;
+  color: #2C2E50;
+  background-color: unset;
+  border: unset;
+  white-space: nowrap;
+}
+
+.promotion-card__link {
+  border: 1px solid #000cff;
+  border-radius: 4px;
+  color: #000cff;
+  text-decoration: none;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.promotion-card__edit-button {
+  border: 1px solid #000cff;
+  border-radius: 4px;
+  color: #000cff;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin-left: 10px;
+}

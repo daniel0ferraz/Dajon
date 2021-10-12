@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom'
 export default function Cards() {
 
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
-    axios.get('http://localhost:5000/produtos?_embed=categorias&_order=desc&_sort=id')
+    axios.get('http://localhost:5000/produtos')
       .then((response) => {
         setProducts(response.data)
-
       });
   }, []);
 
@@ -25,14 +25,14 @@ export default function Cards() {
               <div className="card-img">
                 {
                   product.urlImg === '' ? (
-                    <img src={ImgNull} />
+                    <img src={ImgNull} alt="img null" />
                   ) : (
-                    <img src={product.urlImg} />
+                    <img src={product.urlImg} alt="img null" />
                   )
                 }
               </div>
               <div className="card-info">
-                <span>{product.categoria}</span>
+                <span className={`product-category--${product.categoria}`}>{product.categoria}</span>
                 <h1>{product.nome}</h1>
               </div>
 
