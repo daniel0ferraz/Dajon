@@ -12,13 +12,9 @@ export default function Header() {
           </span>
           <span>
             <a href="/">Menu</a>
-
           </span>
         </div>
-
-        <div className="">
-          <span>Cadastrar</span>
-        </div>
+      
       </header>
     </>
   )
