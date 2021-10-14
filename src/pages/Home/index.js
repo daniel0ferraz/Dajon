@@ -3,17 +3,19 @@ import Cards from '../../components/Cards';
 import store from '../../assets/store_black.svg'
 import "./styles.css";
 
-export default function Home() {
+export default function Home({products, loading}) {
+ 
+  
   return (
     <>
       <div className="container_home">
         <div className="titulo-home">
           <h2><img src={store} alt="" />Shop</h2> 
-          <p>Mostrando resultados: {}</p>
+          <p>Mostrando resultados: </p>
         </div>
         
         <section className="list-product">
-          <Cards  />
+          <Cards products={products} />
         </section>
 
       </div>

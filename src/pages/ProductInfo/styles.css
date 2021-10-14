@@ -112,6 +112,7 @@
   text-decoration: none;
   padding: 8px 10px;
   white-space: nowrap;
+	cursor: pointer;
 }
 
 .promotion-card__edit-button {
@@ -121,4 +122,15 @@
   text-decoration: none;
   padding: 8px 10px;
   margin-left: 10px;
+	cursor: pointer;
+}
+.promotion-card__delete-button {
+	border: none;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #ff004c;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin-left: 10px;
+	cursor: pointer;
 }

@@ -34,13 +34,13 @@ export const FormGroup = styled.div`
 	flex-direction: column;
 	margin-top: 5px;
 	margin-bottom: 20px;
+	width: 100%;
 
 	label {
 	margin-bottom: 5px;
 	font-size: 14px;
 	font-weight: 500;
 	color: #555555;
-	/* font-family: 'Roboto', sans-serif; */
 }
 input, select{
 	border: 1px solid #ddd;

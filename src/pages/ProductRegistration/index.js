@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import * as S from "./styles";
 import { useHistory } from "react-router-dom";
@@ -8,7 +8,18 @@ import { useParams } from "react-router-dom";
 export default function ProductRegistration() {
 
   const { id } = useParams();
-  let history = useHistory();
+  const history = useHistory();
+
+  useEffect(() => {
+    if (id) {
+      axios.get(`http://localhost:5000/produtos/${id}`)
+        .then((response) => {
+          console.log("dados id", response.data);
+          setValues(response.data)
+          // history.push("/home")
+        })
+    }
+  }, [id])
 
   function dataAtualFormatada() {
     var data = new Date(),
@@ -19,9 +30,8 @@ export default function ProductRegistration() {
   }
 
   const initalValues = {
-    id: "",
     nome: "",
-    preco: "",
+    preco: Number,
     categoria: "",
     urlImg: "",
     dataEntrada: dataAtualFormatada(),
@@ -50,16 +60,38 @@ export default function ProductRegistration() {
     }
   }
 
+  const handleEdit = async () => {
+    try {
+      const response = await axios.put(`http://localhost:5000/produtos/${id}`, values)
+      if (response && (response.status === 201 || response.status === 200)) {
+        alert(id, "Atualizado com sucesso!")
+        history.push('/')
+      } else if (!response) {
+        alert("Erro ao Atualizar produto")
+      }
+    } catch (error) {
+      alert("erro requisção", error)
+    }
+  }
+
   function onSubmit(e) {
     e.preventDefault();
+    // se existir id - (Put) - senão->(Post) 
+    if (id) {
+      handleEdit();
+    } else {
+      handleSubmit();
+  }
   }
 
   return (
     <>
       <S.ContainerForm>
-        
+
+        {id && <div>id: {id}</div>}
+
         <S.Form onSubmit={onSubmit} enableReinitialize={true}>
-    
+
           <S.TituloHome>
             <h2>Produto</h2>
             <p>Dados</p>
@@ -67,19 +99,19 @@ export default function ProductRegistration() {
 
           <S.FormGroup>
             <label htmlFor="nome">Nome:</label>
-            <input id="nome" name="nome" type="text" onChange={onChange} />
+            <input id="nome" name="nome" type="text" onChange={onChange} value={values.nome} />
           </S.FormGroup>
 
           <S.FormGroup>
             <label htmlFor="peco">Preço</label>
-            <input id="preco" name="preco" min="0.00" step="0.00" type="number" onChange={onChange} />
+            <input id="preco" name="preco" step="0.00" type="number" onChange={onChange} value={values.preco} />
           </S.FormGroup>
 
-          <div className="row">
+          <S.row>
             <S.FormGroup>
               <label htmlFor="categoria">Categoria</label>
-              <select name="categoria" id="categoria" onChange={onChange}>
-                <option value="">Seleciona</option>
+              <select name="categoria" id="categoria" onChange={onChange} value={values.categoria}>
+                <option>Selecione</option>
                 <option value="Acessorios">Acessorios</option>
                 <option value="Calçados">Calçados</option>
                 <option value="Eletronicos">Eletronicos</option>
@@ -90,19 +122,18 @@ export default function ProductRegistration() {
 
             <S.FormGroup>
               <label htmlFor="quantidade">Quantidade</label>
-              <input id="quantidade" name="quantidade" type="text" onChange={onChange} />
+              <input id="quantidade" name="quantidade" type="text" onChange={onChange} value={values.quantidade} />
             </S.FormGroup>
 
-          </div>
+          </S.row>
 
           <S.FormGroup>
             <label htmlFor="imagem">Imagem</label>
-            <input id="urlImg" name="urlImg" type="text" onChange={onChange} />
+            <input id="urlImg" name="urlImg" type="text" onChange={onChange} value={values.urlImg} />
           </S.FormGroup>
 
-          <S.Button onClick={() => handleSubmit()}>
-            {/* {id ? 'Editar' : 'Cadastrar'} */}
-            Cadastrar
+          <S.Button type="submit">
+            {id ? 'Atualizar' : 'Cadastrar'}
           </S.Button>
 
         </S.Form>
