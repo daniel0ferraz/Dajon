@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Cards from '../../components/Cards';
 import store from '../../assets/store_black.svg'
-import "./styles.css";
+import { Footer } from '../../components/Footer';
+import * as S from "./styles";
+import axios from 'axios';
 
-export default function Home({products, loading}) {
- 
-  
+export default function Home() {
+  const [contador, setContador] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/produtos')
+      .then((response) => {
+        setContador(response.data)
+      });
+  }, []);
+
   return (
     <>
-      <div className="container_home">
-        <div className="titulo-home">
-          <h2><img src={store} alt="" />Shop</h2> 
-          <p>Mostrando resultados: </p>
-        </div>
-        
-        <section className="list-product">
-          <Cards products={products} />
-        </section>
-
-      </div>
+      <S.Container_Home>
+        <S.Title_Home>
+          <S.Title><img src={store} alt="" />Shop</S.Title>
+          <S.Description>
+            Mostrando resultados: {contador.length}
+          </S.Description>
+        </S.Title_Home>
+        <S.List_Product>
+          <Cards />
+        </S.List_Product>
+      </S.Container_Home>
+        <Footer />
     </>
   )
 }

@@ -54,12 +54,12 @@
 }
 .product-card-footer {
 	display: flex;
-	align-items: center;
+	align-items: end;
 }
 
 .product-card-footer span {
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 18px;
 	padding: 2px 6px;
 	border-radius: 3px;
 	font-weight: 400;
@@ -131,6 +131,16 @@
   background-color: #ff004c;
   text-decoration: none;
   padding: 8px 10px;
+  margin-left: 10px;
+	cursor: pointer;
+}
+.promotion-card__buy {
+	border: none;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #4bb995;
+  text-decoration: none;
+  padding: 15px 25px;
   margin-left: 10px;
 	cursor: pointer;
 }
