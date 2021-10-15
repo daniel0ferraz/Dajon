@@ -1,21 +1,15 @@
 import React from 'react';
-import "./styles.css"
+import * as S from "./styles";
+import Sacola from '../../assets/local_mall_black_24dp.svg'
 
 export default function Header() {
   return (
     <>
-      <header>
-        <h1>Dajon</h1>
+      <S.Header>
+        <h1><img src={Sacola} alt="sacola" />Dajon</h1>
         <div className="links">
-          <span>
-            <a href="/cadastro-produto">Adicionar Produto</a>
-          </span>
-          <span>
-            <a href="/">Menu</a>
-          </span>
         </div>
-      
-      </header>
+      </S.Header>
     </>
   )
 }

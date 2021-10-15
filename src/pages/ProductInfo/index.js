@@ -17,7 +17,8 @@ export default function ProductInfo() {
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
         setProduct(response.data)
-        console.log("id Produto", response.data);
+        // console.log("id Produto", response.data);
+        console.log("quantidade", response.data.quantidade);
       });
   }, [id]);
 
@@ -32,7 +33,7 @@ export default function ProductInfo() {
         alert.error("Erro ao excluir produto")
       }
     } catch (e) {
-      toast.error("erro requisção",e)
+      toast.error("erro requisção", e)
     }
   }
 
@@ -40,7 +41,7 @@ export default function ProductInfo() {
     <>
       <div className="container_home">
         <div className="title-home">
-          <h2><img src={Sacola} alt="sacola" />Informações do produto</h2>
+          <h2><img src={Sacola} alt="sacola"/>Informações do produto</h2>
         </div>
 
         <section className="list-product">
@@ -60,16 +61,14 @@ export default function ProductInfo() {
                   Quantidade: {product.quantidade}
                 </button>
 
-                <span className="promotion-card__link"
-                >
+                <button onClick={()=>console.log('Comprou!')} className="promotion-card__buy">
                   Comprar
-                </span>
-
-                <button className="promotion-card__delete-button" onClick={() => handleDelete()}>Deletar</button>
+                </button>
 
                 <Link to={`/editar-produto/${product.id}`} className="promotion-card__edit-button">
                   Editar
                 </Link>
+                <button className="promotion-card__delete-button" onClick={handleDelete}>Deletar</button>
 
               </footer>
             </div>
