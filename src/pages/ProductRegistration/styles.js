@@ -52,6 +52,7 @@ input, select{
 `;
 
 export const row = styled.div`
+	flex: 1;
 	display: flex;
 `;
 

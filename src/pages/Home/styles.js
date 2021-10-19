@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const Container_Home = styled.div`
- width: min(90vw, 800px);
+ width: min(90vw, 900px);
 	margin: auto;
+
+	.header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 `;
 
 export const Title_Home = styled.div`
