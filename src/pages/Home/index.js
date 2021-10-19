@@ -27,7 +27,7 @@ export default function Home() {
           </S.Title_Home>
 
           <div>
-            <input type="text" />
+            <input type="text" placeholder="Buscar Produto" />
           </div>
         </div>
         <S.List_Product>

@@ -9,6 +9,14 @@ export const Container_Home = styled.div`
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	input, select{
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #fff;
+	height: 30px;
+	padding: 0 10px;
+}
 `;
 
 export const Title_Home = styled.div`
@@ -30,7 +38,7 @@ export const Description = styled.p`
 `;
 
 export const List_Product = styled.section`
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 `;
 
 
