@@ -18,9 +18,9 @@ export default function Cards() {
   return (
     <>
       <S.Contaner_Card>
-        {products.map((product) => (
-          <Link to={`/produto/${product.id}`}>
-            <S.Card key={product.id}>
+        {products.map((product, index) => (
+          <Link key={product.id} to={`/produto/${product.id}`}>
+            <S.Card >
               <S.Card_Img>
                 {
                   product.urlImg === '' ? (

@@ -88,10 +88,9 @@ export default function ProductRegistration() {
     <>
       <S.ContainerForm>
 
-        {id && <div>id: {id}</div>}
+        {/* {id && <div>id: {id}</div>} */}
 
         <S.Form onSubmit={onSubmit} enableReinitialize={true}>
-
           <S.TituloHome>
             <h2>Produto</h2>
             <p>Dados</p>
@@ -124,7 +123,7 @@ export default function ProductRegistration() {
               <label htmlFor="quantidade">Quantidade</label>
               <input id="quantidade" name="quantidade" type="text" onChange={onChange} value={values.quantidade} />
             </S.FormGroup>
-
+            
           </S.row>
 
           <S.FormGroup>

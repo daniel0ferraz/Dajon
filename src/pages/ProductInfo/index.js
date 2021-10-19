@@ -3,9 +3,9 @@ import { useHistory, useParams } from 'react-router';
 import { useState } from 'react/cjs/react.development';
 import axios from 'axios';
 import Sacola from '../../assets/local_mall_black_24dp.svg'
-import "./styles.css"
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
+import "./styles.css"
 
 export default function ProductInfo() {
 

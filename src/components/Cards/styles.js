@@ -5,7 +5,7 @@ export const Contaner_Card = styled.div`
 	grid-template-columns: repeat(4, 1fr);
 	gap: 15px;
 	text-align: center;
-	margin: 2rem 0 2rem 0;
+	/* margin: 2rem 0 2rem 0; */
 
   @media (max-width: 900px) {
 		display: grid;
