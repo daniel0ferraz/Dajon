@@ -3,6 +3,7 @@ import Cards from '../../components/Cards';
 import { Footer } from '../../components/Footer';
 import * as S from "./styles";
 import axios from 'axios';
+import ListaCategorias from '../../components/ListaCategorias';
 
 export default function Home() {
   const [contador, setContador] = useState([]);
@@ -30,6 +31,7 @@ export default function Home() {
           </div>
         </div>
         <S.List_Product>
+          <ListaCategorias/>
           <Cards />
         </S.List_Product>
       </S.Container_Home>
