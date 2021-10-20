@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <>
       <S.Header>
-        <h1><img src={Sacola} alt="sacola" />Dajon</h1>
-        <div className="links">
-        </div>
+        <S.TitleHeader>
+          <img src={Sacola} alt="sacola" />
+          Dajon</S.TitleHeader>
       </S.Header>
     </>
   )

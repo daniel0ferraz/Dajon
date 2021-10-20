@@ -8,10 +8,10 @@ export const Header = styled.header`
   background: #000cff;
   min-height: 60px;
   padding: 20px;
+`;
 
-  h1 {
+export const TitleHeader = styled.h1`
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-}
 `;
