@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import ImgNull from '../../assets/card_background.png';
 import * as S from "./styles"
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 
 export default function Cards() {
 
@@ -24,7 +24,7 @@ export default function Cards() {
               <S.Card_Img>
                 {
                   product.urlImg === '' ? (
-                    <img src={ImgNull} alt="img null" />
+                    <img src={ImgNull} alt="imagem nula" />
                   ) : (
                     <img src={product.urlImg} alt={product.name} />
                   )
