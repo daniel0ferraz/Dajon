@@ -9,7 +9,7 @@ export default function Cards() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/produtos')
+    axios.get('http://localhost:5000/produtos?_embed=categorias&_order=desc&_sort=id')
       .then((response) => {
         setProducts(response.data)
       });
