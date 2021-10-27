@@ -6,6 +6,7 @@ import Sacola from '../../assets/local_mall_black_24dp.svg'
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
 import "./styles.css"
+import * as S from "./styles"
 
 export default function ProductInfo() {
 
@@ -17,8 +18,7 @@ export default function ProductInfo() {
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
         setProduct(response.data)
-        // console.log("id Produto", response.data);
-        console.log("quantidade", response.data.quantidade);
+        console.log("Produtos:",response.data)
       });
   }, [id]);
 
@@ -39,43 +39,48 @@ export default function ProductInfo() {
 
   return (
     <>
-      <div className="container_home">
-        <div className="title-home">
-          <h2><img src={Sacola} alt="sacola"/>Informações do produto</h2>
-        </div>
+      <S.Container_Home>
+        <S.Title_Home>
+          <S.Title><img src={Sacola} alt="sacola" />Informações do produto</S.Title>
+        </S.Title_Home>
 
-        <section className="list-product">
-          <div className="product-card">
+        <S.List_Product>
+          <S.Product_Card>
             <img src={product.urlImg} alt={product.title} className="product-card-image" />
-            <div className="product-card-info">
-              <h3 className="product-card-title">{product.nome}</h3>
-              <span className="product-card-price">
+            <S.Product_CardInfo>
+              <S.Product_CardTitle>
+                {product.nome}
+              </S.Product_CardTitle>
+
+              <S.Product_CardPrice>
                 R$ {product.preco}
-              </span>
-              <footer className="product-card-footer">
+              </S.Product_CardPrice>
+
+              <S.Product_CardFooter>
                 <span className={`product-category--${product.categoria}`}>
                   {product.categoria}
                 </span>
 
-                <button className="product-card-count" >
+                <S.Product_CardCount>
                   Quantidade: {product.quantidade}
-                </button>
+                </S.Product_CardCount>
 
-                <button onClick={()=>console.log('Comprou!')} className="promotion-card__buy">
+                <S.Product_ButtonBuy onClick={() => console.log('Comprou!')}>
                   Comprar
-                </button>
+                </S.Product_ButtonBuy>
 
                 <Link to={`/editar-produto/${product.id}`} className="promotion-card__edit-button">
                   Editar
                 </Link>
-                <button className="promotion-card__delete-button" onClick={handleDelete}>Deletar</button>
 
-              </footer>
-            </div>
-          </div>
+                <S.Product_ButtonDelete onClick={handleDelete}>Deletar</S.Product_ButtonDelete>
 
-        </section>
-      </div>
+              </S.Product_CardFooter>
+            </S.Product_CardInfo>
+          </S.Product_Card>
+
+        </S.List_Product>
+      </S.Container_Home>
 
     </>
   )
