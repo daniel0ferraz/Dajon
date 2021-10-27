@@ -18,6 +18,7 @@ export default function ProductInfo() {
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
         setProduct(response.data)
+        console.log("Produtos:",response.data)
       });
   }, [id]);
 

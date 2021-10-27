@@ -4,6 +4,7 @@ import { Footer } from '../../components/Footer';
 import * as S from "./styles";
 import axios from 'axios';
 import ListaCategorias from '../../components/ListaCategorias';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [contador, setContador] = useState([]);
@@ -27,6 +28,7 @@ export default function Home() {
           </S.Title_Home>
 
           <div>
+            <Link to="cadastro-produto">Cadastrar Produto</Link>
             <input type="text" placeholder="Buscar Produto" />
           </div>
         </div>

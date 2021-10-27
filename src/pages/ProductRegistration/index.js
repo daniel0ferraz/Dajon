@@ -29,6 +29,17 @@ export default function ProductRegistration() {
     return dia + "/" + mes + "/" + ano;
   }
 
+  function k(i) {
+    var v = i.value.replace(/\D/g,'');
+    v = (v/100).toFixed(2) + '';
+    v = v.replace(".", ",");
+    v = v.replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,");
+    v = v.replace(/(\d)(\d{3}),/g, "$1.$2,");
+    i.value = v;
+  }
+
+  
+
   const initalValues = {
     nome: "",
     preco: Number,
@@ -103,7 +114,7 @@ export default function ProductRegistration() {
 
           <S.FormGroup>
             <label htmlFor="peco">Preço</label>
-            <input id="preco" name="preco" step="0.00" type="number" onChange={onChange} value={values.preco} />
+            <input id="preco" name="preco" type="number" onChange={onChange} value={values.preco} />
           </S.FormGroup>
 
           <S.row>
