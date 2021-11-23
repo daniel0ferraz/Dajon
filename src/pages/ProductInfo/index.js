@@ -13,14 +13,16 @@ export default function ProductInfo() {
   const { id } = useParams()
   const history = useHistory();
   const [product, setProduct] = useState([]);
+  const [quantidade, setQuantidade] = useState([]);
 
   useEffect(() => {
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
         setProduct(response.data)
-        console.log("Produtos:",response.data)
+        setQuantidade(response.data.quantidade -1)
+        console.log("Quantidade:", response.data.quantidade)
       });
-  }, [id]);
+  }, [id, quantidade]);
 
 
   const handleDelete = async () => {
@@ -29,6 +31,22 @@ export default function ProductInfo() {
       if (response && (response.status === 201 || response.status === 200)) {
         toast(`Produto do Id=(${id}) excluido`)
         history.push('/');
+      } else if (!response) {
+        alert.error("Erro ao excluir produto")
+      }
+    } catch (e) {
+      toast.error("erro requisção", e)
+    }
+  }
+
+  const handleBuy = async (quantidade) => {
+    try {
+      const response = await axios.put(`http://localhost:5000/produtos/${id}`)
+      setQuantidade(quantidade -1)
+      console.log("quantidade:",response.data.quantidade)
+
+      if (response && (response.status === 201 || response.status === 200)) {
+        // history.push('/');
       } else if (!response) {
         alert.error("Erro ao excluir produto")
       }
@@ -65,7 +83,7 @@ export default function ProductInfo() {
                   Quantidade: {product.quantidade}
                 </S.Product_CardCount>
 
-                <S.Product_ButtonBuy onClick={() => console.log('Comprou!')}>
+                <S.Product_ButtonBuy onClick={handleBuy}>
                   Comprar
                 </S.Product_ButtonBuy>
 

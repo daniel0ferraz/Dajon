@@ -1,0 +1,12 @@
+{
+	"name": "api",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "json-server --watch db.json --port 5000 --delay=1000"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}

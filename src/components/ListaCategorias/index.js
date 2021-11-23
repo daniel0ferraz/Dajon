@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css'
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function ListaCategorias() {
@@ -13,7 +13,7 @@ export default function ListaCategorias() {
       .then((response) => {
         setCategorias(response.data)
       });
-  }, []);
+  }, [id]);
 
   return (
     <>

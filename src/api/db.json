@@ -1,0 +1,215 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Roupas"
+    },
+    {
+      "id": 2,
+      "nome": "Calçados"
+    },
+    {
+      "id": 3,
+      "nome": "Acessorios"
+    },
+    {
+      "id": 4,
+      "nome": "Eletronicos"
+    },
+    {
+      "id": "Esportivos",
+      "nome": "Esportivos"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 8,
+      "nome": "2 peças de colar de corrente masculina",
+      "preco": "10.90",
+      "categoria": "Acessorios",
+      "urlImg": "https://img.ltwebstatic.com/images3_pi/2020/12/30/1609308664d5cc8313ac40cd3349800dc33934f421.webp",
+      "dataEntrada": "14/10/2021",
+      "quantidade": 14
+    },
+    {
+      "id": 9,
+      "nome": "Capacete Ciclismo Bike Absolute Wt012 Led Pisca Neon Tam ",
+      "preco": "72.90",
+      "categoria": "Esportivos",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/capacete-ciclismo-bike-absolute-wt012-led-pisca-neon-tam-m-g/aevimports/5288219416/e281f8ebdd9134e533d936b361fe920c.jpg",
+      "dataEntrada": "15/10/2021",
+      "quantidade": 2
+    },
+    {
+      "id": 10,
+      "nome": "Escova Secadora Britania Soft BES13VD Verde Bivolt 1300W Bivolt",
+      "preco": "320.90",
+      "categoria": "Eletronicos",
+      "urlImg": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1809165592",
+      "dataEntrada": "15/10/2021",
+      "quantidade": 1
+    },
+    {
+      "id": 11,
+      "nome": "Kit Bike Lanterna Velocímetro Bolsa Sinalizador Traseiro K64",
+      "preco": "149.90",
+      "categoria": "Esportivos",
+      "urlImg": "https://http2.mlstatic.com/D_NQ_NP_2X_886891-MLB46512557358_062021-F.webp",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13,
+      "nome": "Costas nuas Floral Boho Vestido ",
+      "preco": "29.99",
+      "categoria": "Roupas",
+      "urlImg": "https://img.ltwebstatic.com/images3_pi/2021/08/10/16285761710528ea51f29bd19f2aae0ae4b2f8aa53_thumbnail_900x.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 14,
+      "nome": "Moda Pop - Camiseta Preta e Marrom com Cava Raglan",
+      "preco": "24.99",
+      "categoria": "Roupas",
+      "urlImg": "https://ph-cdn3.ecosweb.com.br/imagens01/foto/moda-masculina/camiseta-manga-curta/camiseta-preta-e-marrom-com-cava-raglan_304648_1000_1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 15,
+      "nome": "Enfim - Jaqueta Preta Masculina em Matelassê",
+      "preco": "102.89",
+      "categoria": "Roupas",
+      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/moda-masculina/jaqueta/jaqueta-preta-masculina-em-matelasse_611496_1000_1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 16,
+      "nome": "Bota com Solado Tratorado Preta",
+      "preco": "83.49",
+      "categoria": "Calçados",
+      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcado-masculino/bota/bota-ronan-preta_334558_1000_1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 17,
+      "nome": "Perfecta - Sandália Preto com Elástico",
+      "preco": "59.90",
+      "categoria": "Calçados",
+      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcados/sandalias-femininas/sandalia-camila-preto_121300_600_1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 18,
+      "nome": "Perfecta - Sandália Rosê Salto Quadrado",
+      "preco": "74.90",
+      "categoria": "Calçados",
+      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcado-feminino/sandalia/sandalia-rose-salto-quadrado_336137_1000_1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 19,
+      "nome": "Bola Adidas Campo Flamengo",
+      "preco": "74.90",
+      "categoria": "Esportivos",
+      "urlImg": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSFvB6kXisIwnREbWggC-U6RvV1XPbbN_FXp9dDvEaE3l__IozdIhoy6XYJWB1yOOYMrL7qa0NML4Okk99cBVrMiAvsebpkFNTnypZf-3dloijPuwSRkEPt&usqp=CAE",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 20,
+      "nome": "Apito de Metal Penalty",
+      "preco": "28.45",
+      "categoria": "Esportivos",
+      "urlImg": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQAlC0bW0E1SGNT0zJPC_3CDwhy43HgtB80K17nThJfWrVNwMzF_TGQA2jJFBfun5AVLKR3xEayh6fMtKq3jV9WmfpNR4Wf-MawAlmja8Ja&usqp=CAE",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 21,
+      "nome": "Kit de colar e Brinco Coração - Fashion Biju",
+      "preco": "15.87",
+      "categoria": "Acessorios",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/kit-de-colar-e-brinco-coracao-fashion-biju/fashionbijuofficial/7008/afe013c589ad8e08b8b1101bc5a1e5c1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 22,
+      "nome": "Bolsa feminina vegas store couro com correntes ",
+      "preco": "56.99",
+      "categoria": "Acessorios",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/bolsa-feminina-vegas-store-couro-com-correntes/vegastore/3bf80d40da5c11eb81224201ac18500e/61702bb679f21442f81a9ff17096f7b6.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 23,
+      "nome": "       Zoom  Sobre o produto Kit 5 Peças Brincos Feminino Trabalhados Marisa   Kit feminino, composto por 5 peças de brincos, confeccionados em metal. Possui um par de brincos em argola, fechamento por tarraxas.   Informações Adicionais: Tamanho: único Cor: dourado Modelo: Kit 5 Peças Brincos Feminino Trabalhados Marisa Material: metal Detalhes adicionais: kit brincos, pingente, bijuteria Marca: Marisa Foto realizada com tamanho: único Categoria: Feminino - Acessório - Bijuteria - Kits 10044674557 Composição Kit 5 Peças Brincos Feminino",
+      "preco": "27.00",
+      "categoria": "Acessorios",
+      "urlImg": "https://images2.marisa.com.br/medias/sys_master/images/images/h3a/h66/12364476874782/KIT-BRINCO-200914-3-DOU-1-10044674564-C1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 24,
+      "nome": "Colar Feminino Duplo ",
+      "preco": "57.90",
+      "categoria": "Acessorios",
+      "urlImg": "https://images2.marisa.com.br/medias/sys_master/images/images/h6c/hce/13082060914718/COLAR-FEM-CR4810-DOU-10049089417-C1.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 25,
+      "nome": "Smart TV LED 43” TCL 43S6500 Full HD - Android Wi-Fi 2 HDMI 1 USB",
+      "preco": "1992.00",
+      "categoria": "Eletronicos",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/smart-tv-led-43-tcl-43s6500-full-hd-android-wi-fi-2-hdmi-1-usb/magazineluiza/193426800/5ac1d3781186045c00e83e80da36ebaa.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 26,
+      "nome": "Rádio Retro Vintage Am Fm Sw Usb Aux Bluetooth Bateria Recarregavel Madeira Estilo Antigo - Altomex",
+      "preco": "168.90",
+      "categoria": "Eletronicos",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/radio-retro-vintage-am-fm-sw-usb-aux-bluetooth-bateria-recarregavel-madeira-estilo-antigo-altomex/svmix/7a571072c3e111eb9a934201ac18500e/93f9425213524f7fbe0dbf18bb704aa3.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": "10"
+    },
+    {
+      "id": 27,
+      "nome": "Ventilador de Mesa e Parede Ultra V-30B-6P - 30cm 3 Velocidades",
+      "preco": "77.90",
+      "categoria": "Eletronicos",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/ventilador-de-mesa-e-parede-ultra-v-30b-6p-30cm-3-velocidades/magazineluiza/020470000/ecb55d5405630b2a387fe6751bf5a8f8.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    },
+    {
+      "id": 28,
+      "nome": "Forno Elétrico de Bancada Britânia 40L - BFE40PI",
+      "preco": "299.90",
+      "categoria": "Eletronicos",
+      "urlImg": "https://a-static.mlcdn.com.br/618x463/forno-eletrico-de-bancada-britania-40l-bfe40pi/magazineluiza/226794700/e6eb20ba7fc766bb4ed31c2dde72a193.jpg",
+      "dataEntrada": "27/10/2021",
+      "quantidade": 10
+    }
+  ]
+}

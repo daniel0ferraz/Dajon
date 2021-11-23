@@ -1,0 +1,80 @@
+{
+	"categorias": [
+		{
+			"id": "Roupas",
+			"nome": "Roupas"
+		},
+		{
+			"id": "Calçados",
+			"nome": "Calçados"
+		},
+		{
+			"id": "Acessorios",
+			"nome": "Acessorios"
+		},
+		{
+			"id": "Eletronicos",
+			"nome": "Eletronicos"
+		},
+		{
+			"id": "Esportivos",
+			"nome": "Esportivos"
+		}
+	],
+	"produtos": [
+		{
+			"id": 4,
+			"nome": "Reserva Camiseta Pica Pau Oceanos Branco",
+			"preco": "69.90",
+			"categoria": "Roupas",
+			"urlImg": "https://static.glami.com.br/img/242316915.jpg",
+			"dataEntrada": "14/10/2021",
+			"quantidade": "2"
+		},
+		{
+			"id": 5,
+			"nome": "Tênis Olympikus Anyway 2 Feminino Marinho e Rosa - Azul+Marinho",
+			"preco": "179.90",
+			"categoria": "Calçados",
+			"urlImg": "https://static.netshoes.com.br/produtos/tenis-olympikus-anyway-2-feminino-marinho-e-rosa/52/2I2-3388-852/2I2-3388-852_zoom1.jpg?ts=1633970784&",
+			"dataEntrada": "14/10/2021",
+			"quantidade": 2
+		},
+		{
+			"id": 7,
+			"nome": "Camisa De Ciclismo 3xu Venon Refactor Mtb Speed - Amarelo",
+			"preco": "126.90",
+			"categoria": "Esportivos",
+			"urlImg": "https://static.netshoes.com.br/produtos/camisa-de-ciclismo-3xu-venon-refactor-mtb-speed/16/O24-0810-016/O24-0810-016_zoom1.jpg?ts=1629479469&",
+			"dataEntrada": "14/10/2021",
+			"quantidade": 3
+		},
+		{
+			"id": 8,
+			"nome": "2 peças de colar de corrente masculina",
+			"preco": "10.90",
+			"categoria": "Acessorios",
+			"urlImg": "https://img.ltwebstatic.com/images3_pi/2020/12/30/1609308664d5cc8313ac40cd3349800dc33934f421.webp",
+			"dataEntrada": "14/10/2021",
+			"quantidade": 14
+		},
+		{
+			"id": 9,
+			"nome": "Capacete Ciclismo Bike Absolute Wt012 Led Pisca Neon Tam",
+			"preco": 72.9,
+			"categoria": "Esportivos",
+			"urlImg": "https://a-static.mlcdn.com.br/618x463/capacete-ciclismo-bike-absolute-wt012-led-pisca-neon-tam-m-g/aevimports/5288219416/e281f8ebdd9134e533d936b361fe920c.jpg",
+			"dataEntrada": "15/10/2021",
+			"quantidade": 2
+		},
+		{
+			"id": 10,
+			"nome": "Escova Secadora Britania Soft BES13VD Verde Bivolt 1300W Bivolt",
+			"preco": "220.00",
+			"categoria": "Eletronicos",
+			"urlImg": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1809165592",
+			"dataEntrada": "15/10/2021",
+			"quantidade": 1
+		}
+	]
+}
