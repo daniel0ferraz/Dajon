@@ -19,13 +19,13 @@ export default function ListaCategorias() {
     <>
       <div className="container_categorias">
         <ul>
-          {/* {
+          {
             categorias.map((categoria) => (
               <Link to={`/categoria/${categoria.id}`}>
                 <li>{categoria.nome}</li>
               </Link>
             ))
-          } */}
+          } 
         </ul>
       </div>
     </>
