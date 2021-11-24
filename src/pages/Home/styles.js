@@ -43,15 +43,17 @@ export const Title_Home = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-weight: 700;
+  font-weight: 600;
 	font-size: 1.9rem;
+	font-family: 'Roboto';
 `;
 
 export const Description = styled.p`
  	font-style: normal;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 400;
 	color: #3c3c3c;
+	font-family: 'Roboto';
 `;
 
 export const List_Product = styled.section`
