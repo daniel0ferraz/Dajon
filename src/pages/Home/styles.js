@@ -1,22 +1,39 @@
 import styled from "styled-components";
 
 export const Container_Home = styled.div`
- width: min(90vw, 900px);
+    width: min(97vw,964px);
 	margin: auto;
+`;
 
-	.header{
+export const Header = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
+		padding: 0 15px;
+`;
 
-	input, select{
-	border: 1px solid #ddd;
+export const BoxSearch = styled.div`
+
+	display: flex;
+	padding: 10px;
+	margin: 20px 0;
+	align-items:center;
+	border: 1px solid #3c3c3c;
 	border-radius: 6px;
-	background-color: #fff;
-	height: 30px;
-	padding: 0 10px;
-}
+
+	input{
+    border: 0px;
+    background: transparent;
+    outline: 0;
+    color: #3c3c3c;
+    font-size: 14px;
+    flex:1;
+  }
+
+  img{
+	  color: #3c3c3c;
+	  width: 20px;
+  }
 `;
 
 export const Title_Home = styled.div`
@@ -33,8 +50,8 @@ export const Title = styled.h2`
 export const Description = styled.p`
  	font-style: normal;
 	font-size: 1rem;
-	font-weight: 500;
-	color: #494646;
+	font-weight: 600;
+	color: #3c3c3c;
 `;
 
 export const List_Product = styled.section`

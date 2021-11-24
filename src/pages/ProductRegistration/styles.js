@@ -67,8 +67,9 @@ export const Button = styled.button`
 	line-height: 22px;
 	font-size: 14px;
 	align-items: center;
-	color: #000;
-	opacity: 0.8;
+	font-family: 'Roboto';
+	color: #3c3c3c;
+	/* opacity: 0.8; */
 	background: none;
 	cursor: pointer;
 `;

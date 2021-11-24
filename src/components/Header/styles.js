@@ -6,6 +6,7 @@ export const Header = styled.header`
   justify-content: center;
   align-items: center;
   background: #000cff;
+  opacity: 0.7;
   min-height: 60px;
   padding: 20px;
 `;

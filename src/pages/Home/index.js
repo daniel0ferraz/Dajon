@@ -5,6 +5,7 @@ import * as S from "./styles";
 import axios from 'axios';
 import ListaCategorias from '../../components/ListaCategorias';
 import { Link } from 'react-router-dom';
+import search from '../../assets/search.svg';
 
 export default function Home() {
   const [contador, setContador] = useState([]);
@@ -19,7 +20,7 @@ export default function Home() {
   return (
     <>
       <S.Container_Home>
-        <div className="header">
+        <S.Header>
           <S.Title_Home>
             <S.Title>Shop</S.Title>
             <S.Description>
@@ -27,15 +28,20 @@ export default function Home() {
             </S.Description>
           </S.Title_Home>
 
-          <div>
             <Link to="cadastro-produto">Cadastrar Produto</Link>
+
+          <S.BoxSearch>
+             <img src={search} alt=""/>
             <input type="text" placeholder="Buscar Produto" />
-          </div>
-        </div>
+          </S.BoxSearch>
+        </S.Header>
+
+        <ListaCategorias />
+
         <S.List_Product>
-          <ListaCategorias/>
-          <Cards />
-        </S.List_Product>
+          <Cards url={"/produto"} />
+        </S.List_Product >
+
       </S.Container_Home>
       <Footer />
     </>
