@@ -19,7 +19,7 @@ export default function ProductInfo() {
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
         setProduct(response.data)
-        setQuantidade(response.data.quantidade -1)
+        setQuantidade(response.data.quantidade - 1)
         console.log("Quantidade:", response.data.quantidade)
       });
   }, [id, quantidade]);
@@ -42,8 +42,8 @@ export default function ProductInfo() {
   const handleBuy = async (quantidade) => {
     try {
       const response = await axios.put(`http://localhost:5000/produtos/${id}`)
-      setQuantidade(quantidade -1)
-      console.log("quantidade:",response.data.quantidade)
+      setQuantidade(quantidade - 1)
+      console.log("quantidade:", response.data.quantidade)
 
       if (response && (response.status === 201 || response.status === 200)) {
         // history.push('/');
@@ -56,7 +56,7 @@ export default function ProductInfo() {
   }
 
   return (
-    <>
+    <div>
       <S.Container_Home>
         <S.Title_Home>
           <S.Title><img src={Sacola} alt="sacola" />Informações do produto</S.Title>
@@ -100,6 +100,6 @@ export default function ProductInfo() {
         </S.List_Product>
       </S.Container_Home>
 
-    </>
+    </div>
   )
 }

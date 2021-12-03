@@ -52,8 +52,9 @@ input, select{
 `;
 
 export const row = styled.div`
-	flex: 1;
-	display: flex;
+	display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
 `;
 
 export const Button = styled.button`

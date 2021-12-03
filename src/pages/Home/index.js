@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div>
       <S.Container_Home>
         <S.Header>
           <S.Title_Home>
@@ -28,10 +28,10 @@ export default function Home() {
             </S.Description>
           </S.Title_Home>
 
-            <Link to="cadastro-produto">Cadastrar Produto</Link>
+          <Link to="cadastro-produto">Cadastrar Produto</Link>
 
           <S.BoxSearch>
-             <img src={search} alt=""/>
+            <img src={search} alt="" />
             <input type="text" placeholder="Buscar Produto" />
           </S.BoxSearch>
         </S.Header>
@@ -44,6 +44,6 @@ export default function Home() {
 
       </S.Container_Home>
       <Footer />
-    </>
+    </div>
   )
 }

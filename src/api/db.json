@@ -32,15 +32,6 @@
       "quantidade": 14
     },
     {
-      "id": 9,
-      "nome": "Capacete Ciclismo Bike Absolute Wt012 Led Pisca Neon Tam ",
-      "preco": "72.90",
-      "categoria": "Esportivos",
-      "urlImg": "https://a-static.mlcdn.com.br/618x463/capacete-ciclismo-bike-absolute-wt012-led-pisca-neon-tam-m-g/aevimports/5288219416/e281f8ebdd9134e533d936b361fe920c.jpg",
-      "dataEntrada": "15/10/2021",
-      "quantidade": 2
-    },
-    {
       "id": 10,
       "nome": "Escova Secadora Britania Soft BES13VD Verde Bivolt 1300W Bivolt",
       "preco": "320.90",
@@ -206,9 +197,34 @@
       "nome": "",
       "categoria": "",
       "urlImg": "",
-      "dataEntrada": "24/11/2021",
+      "dataEntrada": "29/11/2021",
       "quantidade": "",
-      "id": 29
+      "id": 30
+    },
+    {
+      "nome": "dad",
+      "preco": "2222222222",
+      "categoria": "Calçados",
+      "urlImg": "",
+      "dataEntrada": "03/12/2021",
+      "quantidade": "2",
+      "id": 31
+    },
+    {
+      "nome": "",
+      "categoria": "",
+      "urlImg": "",
+      "dataEntrada": "03/12/2021",
+      "quantidade": "",
+      "id": 32
+    },
+    {
+      "nome": "dad",
+      "categoria": "Calçados",
+      "urlImg": "dad",
+      "dataEntrada": "03/12/2021",
+      "quantidade": "",
+      "id": 34
     }
   ]
 }

@@ -3,7 +3,8 @@ import axios from 'axios';
 import * as S from "./styles";
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
-
+import Toast from '../../components/Toast/index';
+import { toast } from 'react-toastify';
 
 export default function ProductRegistration() {
 
@@ -51,13 +52,13 @@ export default function ProductRegistration() {
     try {
       const response = await axios.post("http://localhost:5000/produtos", values)
       if (response && (response.status === 201 || response.status === 200)) {
-        alert("Cadastrado com sucesso!")
-        history.push("/home");
+        toast.success("Cadastrado com sucesso!")
+        // history.push("/home");
       } else if (!response) {
-        alert("Erro ao cadastrar o produto!")
+        toast.info("Erro ao cadastrar o produto!")
       }
     } catch (error) {
-      alert("Erro requisição!")
+      toast.error("Erro requisição!")
     }
   }
 
@@ -65,13 +66,13 @@ export default function ProductRegistration() {
     try {
       const response = await axios.put(`http://localhost:5000/produtos/${id}`, values)
       if (response && (response.status === 201 || response.status === 200)) {
-        alert(id, "Atualizado com sucesso!")
+        toast.success(id, "Atualizado com sucesso!")
         history.push('/')
       } else if (!response) {
-        alert("Erro ao Atualizar produto")
+        toast.error("Erro ao Atualizar produto")
       }
-    } catch (error) {
-      alert("erro requisção", error)
+    } catch (err) {
+      toast.error("erro requisção")
     }
   }
 
@@ -82,12 +83,13 @@ export default function ProductRegistration() {
       handleEdit();
     } else {
       handleSubmit();
-  }
+    }
   }
 
   return (
-    <>
+    <div>
       <S.ContainerForm>
+        <Toast />
 
         {/* {id && <div>id: {id}</div>} */}
 
@@ -98,9 +100,10 @@ export default function ProductRegistration() {
           </S.TituloHome>
 
           <S.FormGroup>
-            <label htmlFor="nome">Nome:</label>
+            <label htmlFor="nome">Nome</label>
             <input id="nome" name="nome" type="text" onChange={onChange} value={values.nome} />
           </S.FormGroup>
+
 
           <S.FormGroup>
             <label htmlFor="peco">Preço</label>
@@ -124,7 +127,7 @@ export default function ProductRegistration() {
               <label htmlFor="quantidade">Quantidade</label>
               <input id="quantidade" name="quantidade" type="text" onChange={onChange} value={values.quantidade} />
             </S.FormGroup>
-            
+
           </S.row>
 
           <S.FormGroup>
@@ -139,6 +142,6 @@ export default function ProductRegistration() {
         </S.Form>
       </S.ContainerForm>
 
-    </>
+    </div>
   )
 }

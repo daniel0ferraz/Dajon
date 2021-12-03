@@ -19,16 +19,16 @@ export default function Categoria() {
   }, [categorias.id, id]);
 
   return (
-    <>
+    <div>
       <div className="container">
         <h2>Produto</h2>
       </div>
 
       <ListaCategorias />
-      
+
       <Route exact path={`/${path}/${id}`}>
-        <Cards url={``}  />
+        <Cards url={``} />
       </Route>
-    </>
+    </div>
   )
 }

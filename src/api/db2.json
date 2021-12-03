@@ -1,0 +1,45 @@
+{
+  "sendMessage": [
+    {
+      "id": 6,
+      "from": "+13475878813",
+      "to": "+5521999540152",
+      "body": "Listar todas as ramificações do repositório -git branch --list"
+    },
+    {
+      "from": "+13475878813",
+      "to": "+5521999540152",
+      "body": "Ai callica, foi!!!",
+      "id": 7
+    }
+  ],
+  "sendPeriodic": [
+    {
+      "id": 1,
+      "description": "string",
+      "message": "string",
+      "birthdaydate": "string",
+      "dayAfterbirth": "Date",
+      "day": "",
+      "afterRegister": "string",
+      "sendtime": ""
+    },
+    {
+      "description": "AAaa",
+      "message": "Teste",
+      "dayAfterbirth": "5",
+      "sendtime": "18:31",
+      "afterRegister": "afterRegister",
+      "id": 2
+    },
+    {
+      "description": "AAaa",
+      "message": "Teste",
+      "dayAfterbirth": "5",
+      "sendtime": "18:31",
+      "afterRegister": "afterRegister",
+      "contacts": "contacts",
+      "id": 3
+    }
+  ]
+}

@@ -16,7 +16,7 @@ export default function Cards() {
   }, []);
 
   return (
-    <>
+    <div>
       <S.Contaner_Card>
         {products.map((product, index) => (
           <Link key={product.id} to={`/produto/${product.id}`}>
@@ -43,6 +43,6 @@ export default function Cards() {
           </Link>
         ))}
       </S.Contaner_Card>
-    </>
+    </div>
   )
 }

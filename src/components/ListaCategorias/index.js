@@ -15,19 +15,19 @@ export default function ListaCategorias() {
   }, []);
 
   return (
-    <>
-      <div className="container_categorias">
-        <S.Itens>
-          {
-            categorias.map((categoria) => (
-              <Link key={categoria.id} to={`/categoria/${categoria.id}`}>
-                <li className={`product-category--${categoria.id}`}>{categoria.id}</li>
-              </Link>
-               
-            ))
-          }
-        </S.Itens>
-      </div>
-    </>
+
+    <div className="container_categorias">
+      <S.Itens>
+        {
+          categorias.map((categoria) => (
+            <Link key={categoria.id} to={`/categoria/${categoria.id}`}>
+              <li className={`product-category--${categoria.id}`}>{categoria.id}</li>
+            </Link>
+
+          ))
+        }
+      </S.Itens>
+    </div>
+
   )
 }
