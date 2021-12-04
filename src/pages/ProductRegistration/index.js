@@ -6,7 +6,11 @@ import { useParams } from "react-router-dom";
 import Toast from '../../components/Toast/index';
 import { toast } from 'react-toastify';
 
+import { FormErrors } from "../../utils/validations/getValidationsErrors";
+
 export default function ProductRegistration() {
+
+  const [errors, setErrors] = useState(FormErrors)
 
   const { id } = useParams();
   const history = useHistory();
@@ -49,6 +53,13 @@ export default function ProductRegistration() {
   }
 
   const handleSubmit = async () => {
+    const errors = await productValidation();
+
+    if (errors) {
+      console.log(errors);
+      return setErrors(errors);
+    }
+
     try {
       const response = await axios.post("http://localhost:5000/produtos", values)
       if (response && (response.status === 201 || response.status === 200)) {
