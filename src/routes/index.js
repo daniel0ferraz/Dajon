@@ -6,7 +6,6 @@ import ProductRegistration from '../pages/ProductRegistration';
 import ProductInfo from '../pages/ProductInfo';
 import Categoria from '../pages/Categoria';
 
-
 export default function Routes() {
 	return (
 
@@ -20,6 +19,7 @@ export default function Routes() {
 				<Route path='/produto/:id' component={ProductInfo} />
 				<Route path='/editar-produto/:id' component={ProductRegistration} />
 				<Route path='/cadastro-produto' component={ProductRegistration} />
+
 
 				<Route component={() => <div>Page 404!</div>} />
 			</Switch>

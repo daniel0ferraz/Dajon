@@ -28,7 +28,10 @@ export default function Home() {
             </S.Description>
           </S.Title_Home>
 
-          <Link to="cadastro-produto">Cadastrar Produto</Link>
+          <div className="sidebar">
+            <Link to="cadastro-produto">Cadastrar Produto</Link>
+            <Link to="bot">Bot</Link>
+          </div>
 
           <S.BoxSearch>
             <img src={search} alt="" />
