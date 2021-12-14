@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useHistory, useParams } from 'react-router';
 import { useState } from 'react/cjs/react.development';
-import axios from 'axios';
 import Sacola from '../../assets/local_mall_black_24dp.svg'
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
 import "./styles.css"
 import * as S from "./styles"
+import api from '../../service/api';
 
 export default function ProductInfo() {
 
@@ -16,7 +16,7 @@ export default function ProductInfo() {
   const [quantidade, setQuantidade] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/produtos/${id}`)
+    api.get(`produtos/${id}`)
       .then((response) => {
         setProduct(response.data)
         setQuantidade(response.data.quantidade - 1)
@@ -27,7 +27,7 @@ export default function ProductInfo() {
 
   const handleDelete = async () => {
     try {
-      const response = await axios.delete(`http://localhost:5000/produtos/${id}`)
+      const response = await api.delete(`produtos/${id}`)
       if (response && (response.status === 201 || response.status === 200)) {
         toast(`Produto do Id=(${id}) excluido`)
         history.push('/');
@@ -41,7 +41,7 @@ export default function ProductInfo() {
 
   const handleBuy = async (quantidade) => {
     try {
-      const response = await axios.put(`http://localhost:5000/produtos/${id}`)
+      const response = await api.put(`produtos/${id}`)
       setQuantidade(quantidade - 1)
       console.log("quantidade:", response.data.quantidade)
 
