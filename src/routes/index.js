@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import ProductRegistration from '../pages/ProductRegistration';
 import ProductInfo from '../pages/ProductInfo';
 import Categoria from '../pages/Categoria';
+import Nav from './../components/Nav/index';
 
 export default function Routes() {
 	return (
@@ -19,6 +20,7 @@ export default function Routes() {
 				<Route path='/produto/:id' component={ProductInfo} />
 				<Route path='/editar-produto/:id' component={ProductRegistration} />
 				<Route path='/cadastro-produto' component={ProductRegistration} />
+				<Route path='/nav' component={Nav} />
 
 
 				<Route component={() => <div>Page 404!</div>} />
