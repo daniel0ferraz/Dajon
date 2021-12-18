@@ -6,26 +6,24 @@ import ProductRegistration from '../pages/ProductRegistration';
 import ProductInfo from '../pages/ProductInfo';
 import Categoria from '../pages/Categoria';
 import Nav from './../components/Nav/index';
+import Login from './../pages/Login/index';
 
 export default function Routes() {
-	return (
+  return (
+    <Router>
+      {/* // <Header /> */}
+      <Switch>
+        <Route path="/" component={Login} />
+        <Route path="/Home" exact component={Home} />
+        <Route path="/home" component={Home} />
+        <Route path="/categoria/:id" component={Categoria} />
+        <Route path="/produto/:id" component={ProductInfo} />
+        <Route path="/editar-produto/:id" component={ProductRegistration} />
+        <Route path="/cadastro-produto" component={ProductRegistration} />
+        <Route path="/nav" component={Nav} />
 
-		<Router>
-			<Header />
-			<Switch>
-				<Route path='/' exact component={Home} />
-
-				<Route path='/home' component={Home} />
-				<Route path='/categoria/:id' component={Categoria} />
-				<Route path='/produto/:id' component={ProductInfo} />
-				<Route path='/editar-produto/:id' component={ProductRegistration} />
-				<Route path='/cadastro-produto' component={ProductRegistration} />
-				<Route path='/nav' component={Nav} />
-
-
-				<Route component={() => <div>Page 404!</div>} />
-			</Switch>
-		</Router>
-
-	);
+        <Route component={() => <div>Page 404!</div>} />
+      </Switch>
+    </Router>
+  );
 }
