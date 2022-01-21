@@ -83,7 +83,7 @@
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/forno-eletrico-de-bancada-britania-40l-bfe40pi/magazineluiza/226794700/e6eb20ba7fc766bb4ed31c2dde72a193.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10
+      "quantidade": "2222"
     },
     {
       "id": 30,
@@ -114,6 +114,15 @@
       "urlImg": "",
       "dataEntrada": "07/12/2021",
       "quantidade": ""
+    },
+    {
+      "nome": "555",
+      "preco": "555",
+      "categoria": "",
+      "urlImg": "555",
+      "dataEntrada": "21/01/2022",
+      "quantidade": "",
+      "id": 36
     }
   ]
 }

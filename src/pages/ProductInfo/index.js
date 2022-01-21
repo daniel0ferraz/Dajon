@@ -3,7 +3,8 @@ import { useHistory, useParams } from 'react-router';
 import { useState } from 'react/cjs/react.development';
 import Sacola from '../../assets/local_mall_black_24dp.svg';
 import { Link } from 'react-router-dom';
-import  toast  from 'react-toastify';
+import Toast from '../../components/Toast/index';
+import { toast } from 'react-toastify';
 import './styles.css';
 import * as S from './styles';
 import api from '../../service/api';
@@ -55,10 +56,10 @@ export default function ProductInfo() {
       });
 
       if (response.data.quantidade) {
+        toast.success('Produto Comprado!', product.nome)
         setQuantidade(quantidade - 1);
-        console.log('qtd', response.data.quantidade);
       } else if (response.data.quantidade <= 0 ) {
-        toast.error('Produto abaixo do Estoque');
+        toast.error('Produto abaixo do Estoque!');
       } 
     } catch (e) {
       toast.error('erro requisção', e);
@@ -67,6 +68,7 @@ export default function ProductInfo() {
 
   return (
     <div>
+      <Toast/>
       <S.Container_Home>
         <S.Title_Home>
           <S.Title>
@@ -93,7 +95,7 @@ export default function ProductInfo() {
                 </span>
 
                 <S.Product_CardCount>
-                  Quantidade: {quantidade}
+                  Quantidade: {quantidade ? quantidade : 'Produto em estoque'}
                 </S.Product_CardCount>
 
                 <S.Product_ButtonBuy onClick={handleBuy}>
