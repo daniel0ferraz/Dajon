@@ -23,103 +23,13 @@
   ],
   "produtos": [
     {
-      "id": 8,
-      "nome": "2 peças de colar de corrente masculina",
-      "preco": "10.90",
-      "categoria": "Acessorios",
-      "urlImg": "https://img.ltwebstatic.com/images3_pi/2020/12/30/1609308664d5cc8313ac40cd3349800dc33934f421.webp",
-      "dataEntrada": "14/10/2021",
-      "quantidade": 14
-    },
-    {
-      "id": 10,
-      "nome": "Escova Secadora Britania Soft BES13VD Verde Bivolt 1300W Bivolt",
-      "preco": "320.90",
-      "categoria": "Eletronicos",
-      "urlImg": "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1809165592",
-      "dataEntrada": "15/10/2021",
-      "quantidade": 1
-    },
-    {
-      "id": 11,
-      "nome": "Kit Bike Lanterna Velocímetro Bolsa Sinalizador Traseiro K64",
-      "preco": "149.90",
-      "categoria": "Esportivos",
-      "urlImg": "https://http2.mlstatic.com/D_NQ_NP_2X_886891-MLB46512557358_062021-F.webp",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 13,
-      "nome": "Costas nuas Floral Boho Vestido ",
-      "preco": "29.99",
-      "categoria": "Roupas",
-      "urlImg": "https://img.ltwebstatic.com/images3_pi/2021/08/10/16285761710528ea51f29bd19f2aae0ae4b2f8aa53_thumbnail_900x.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 14,
-      "nome": "Moda Pop - Camiseta Preta e Marrom com Cava Raglan",
-      "preco": "24.99",
-      "categoria": "Roupas",
-      "urlImg": "https://ph-cdn3.ecosweb.com.br/imagens01/foto/moda-masculina/camiseta-manga-curta/camiseta-preta-e-marrom-com-cava-raglan_304648_1000_1.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 15,
-      "nome": "Enfim - Jaqueta Preta Masculina em Matelassê",
-      "preco": "102.89",
-      "categoria": "Roupas",
-      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/moda-masculina/jaqueta/jaqueta-preta-masculina-em-matelasse_611496_1000_1.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 16,
-      "nome": "Bota com Solado Tratorado Preta",
-      "preco": "83.49",
-      "categoria": "Calçados",
-      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcado-masculino/bota/bota-ronan-preta_334558_1000_1.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
       "id": 17,
       "nome": "Perfecta - Sandália Preto com Elástico",
       "preco": "59.90",
       "categoria": "Calçados",
       "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcados/sandalias-femininas/sandalia-camila-preto_121300_600_1.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 18,
-      "nome": "Perfecta - Sandália Rosê Salto Quadrado",
-      "preco": "74.90",
-      "categoria": "Calçados",
-      "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcado-feminino/sandalia/sandalia-rose-salto-quadrado_336137_1000_1.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 19,
-      "nome": "Bola Adidas Campo Flamengo",
-      "preco": "74.90",
-      "categoria": "Esportivos",
-      "urlImg": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSFvB6kXisIwnREbWggC-U6RvV1XPbbN_FXp9dDvEaE3l__IozdIhoy6XYJWB1yOOYMrL7qa0NML4Okk99cBVrMiAvsebpkFNTnypZf-3dloijPuwSRkEPt&usqp=CAE",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 20,
-      "nome": "Apito de Metal Penalty",
-      "preco": "28.45",
-      "categoria": "Esportivos",
-      "urlImg": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQAlC0bW0E1SGNT0zJPC_3CDwhy43HgtB80K17nThJfWrVNwMzF_TGQA2jJFBfun5AVLKR3xEayh6fMtKq3jV9WmfpNR4Wf-MawAlmja8Ja&usqp=CAE",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
+      "quantidade": 0
     },
     {
       "id": 21,
@@ -128,25 +38,7 @@
       "categoria": "Acessorios",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/kit-de-colar-e-brinco-coracao-fashion-biju/fashionbijuofficial/7008/afe013c589ad8e08b8b1101bc5a1e5c1.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 22,
-      "nome": "Bolsa feminina vegas store couro com correntes ",
-      "preco": "56.99",
-      "categoria": "Acessorios",
-      "urlImg": "https://a-static.mlcdn.com.br/618x463/bolsa-feminina-vegas-store-couro-com-correntes/vegastore/3bf80d40da5c11eb81224201ac18500e/61702bb679f21442f81a9ff17096f7b6.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
-    },
-    {
-      "id": 23,
-      "nome": "       Zoom  Sobre o produto Kit 5 Peças Brincos Feminino Trabalhados Marisa   Kit feminino, composto por 5 peças de brincos, confeccionados em metal. Possui um par de brincos em argola, fechamento por tarraxas.   Informações Adicionais: Tamanho: único Cor: dourado Modelo: Kit 5 Peças Brincos Feminino Trabalhados Marisa Material: metal Detalhes adicionais: kit brincos, pingente, bijuteria Marca: Marisa Foto realizada com tamanho: único Categoria: Feminino - Acessório - Bijuteria - Kits 10044674557 Composição Kit 5 Peças Brincos Feminino",
-      "preco": "27.00",
-      "categoria": "Acessorios",
-      "urlImg": "https://images2.marisa.com.br/medias/sys_master/images/images/h3a/h66/12364476874782/KIT-BRINCO-200914-3-DOU-1-10044674564-C1.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 10
+      "quantidade": 0
     },
     {
       "id": 24,
@@ -194,45 +86,34 @@
       "quantidade": 10
     },
     {
+      "id": 30,
       "nome": "",
       "categoria": "",
       "urlImg": "",
       "dataEntrada": "29/11/2021",
-      "quantidade": "",
-      "id": 30
+      "quantidade": ""
     },
     {
-      "nome": "dad",
-      "preco": "2222222222",
-      "categoria": "Calçados",
-      "urlImg": "",
-      "dataEntrada": "03/12/2021",
-      "quantidade": "2",
-      "id": 31
-    },
-    {
+      "id": 32,
       "nome": "",
       "categoria": "",
       "urlImg": "",
       "dataEntrada": "03/12/2021",
-      "quantidade": "",
-      "id": 32
+      "quantidade": ""
     },
     {
-      "nome": "dad",
-      "categoria": "Calçados",
-      "urlImg": "dad",
-      "dataEntrada": "03/12/2021",
-      "quantidade": "",
-      "id": 34
+      "id": 34,
+      "nome": "Maria Tereza Gomes Rodrigues",
+      "quantidade": "200",
+      "preco": "22"
     },
     {
+      "id": 35,
       "nome": "",
       "categoria": "",
       "urlImg": "",
       "dataEntrada": "07/12/2021",
-      "quantidade": "",
-      "id": 35
+      "quantidade": ""
     }
   ]
 }
