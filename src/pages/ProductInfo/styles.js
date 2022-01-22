@@ -29,7 +29,7 @@ export const Product_Card = styled.section`
 	align-items: flex-start;
 `;
 
-export const Product_CardImage = styled.section`
+export const Product_CardImage = styled.img`
  	max-width: 100px;
 	margin-right: 20px;
 `;
