@@ -1,83 +1,121 @@
 import React, { useEffect } from 'react';
 import { useHistory, useParams } from 'react-router';
 import { useState } from 'react/cjs/react.development';
-import axios from 'axios';
-import Sacola from '../../assets/local_mall_black_24dp.svg'
-import "./styles.css"
+import Sacola from '../../assets/local_mall_black_24dp.svg';
 import { Link } from 'react-router-dom';
-import { toast } from "react-toastify";
+import Toast from '../../components/Toast/index';
+import { toast } from 'react-toastify';
+// import './styles.css';
+import * as S from './styles';
+import api from '../../service/api';
 
 export default function ProductInfo() {
-
-  const { id } = useParams()
+  const { id } = useParams();
   const history = useHistory();
   const [product, setProduct] = useState([]);
+  const [quantidade, setQuantidade] = useState('');
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/produtos/${id}`)
-      .then((response) => {
-        setProduct(response.data)
-        console.log("id Produto", response.data);
-      });
+    api.get(`produtos/${id}`).then((response) => {
+      setProduct(response.data);
+      //console.log('Quantidade:', response.data.quantidade - 1);
+    });
   }, [id]);
 
+  useEffect(() => {
+    api.get(`produtos/${id}`).then((response) => {
+      setQuantidade(response.data.quantidade);
+      //console.log('Quantidade:', response.data.quantidade - 1);
+    });
+  }, []);
 
   const handleDelete = async () => {
     try {
-      const response = await axios.delete(`http://localhost:5000/produtos/${id}`)
+      const response = await api.delete(`produtos/${id}`);
       if (response && (response.status === 201 || response.status === 200)) {
-        toast(`Produto do Id=(${id}) excluido`)
+        toast(`Produto do Id=(${id}) excluido`);
         history.push('/');
       } else if (!response) {
-        alert.error("Erro ao excluir produto")
+        alert.error('Erro ao excluir produto');
       }
     } catch (e) {
-      toast.error("erro requisção",e)
+      toast.error('erro requisção', e);
     }
-  }
+  };
+
+  const handleBuy = async () => {
+    try {
+      const response = await api.put(`produtos/${id}`, {
+        id: product.id,
+        nome: product.nome,
+        preco: product.preco,
+        categoria: product.categoria,
+        urlImg: product.urlImg,
+        dataEntrada: product.dataEntrada,
+        quantidade: quantidade,
+      });
+
+      if (response.data.quantidade) {
+        toast.success('Produto Comprado!', product.nome)
+        setQuantidade(quantidade - 1);
+      } else if (response.data.quantidade <= 0 ) {
+        toast.error('Produto abaixo do Estoque!');
+      } 
+    } catch (e) {
+      toast.error('erro requisção', e);
+    }
+  };
 
   return (
-    <>
-      <div className="container_home">
-        <div className="title-home">
-          <h2><img src={Sacola} alt="sacola" />Informações do produto</h2>
-        </div>
+    <div>
+      <Toast/>
+      <S.Container_Home>
+        <S.Title_Home>
+          <S.Title>
+            <img src={Sacola} alt="sacola" />
+            Informações do produto
+          </S.Title>
+        </S.Title_Home>
 
-        <section className="list-product">
-          <div className="product-card">
-            <img src={product.urlImg} alt={product.title} className="product-card-image" />
-            <div className="product-card-info">
-              <h3 className="product-card-title">{product.nome}</h3>
-              <span className="product-card-price">
-                R$ {product.preco}
-              </span>
-              <footer className="product-card-footer">
+        <S.List_Product>
+          <S.Product_Card>
+            <S.Product_CardImage
+              src={product.urlImg}
+              alt={product.title}
+            />
+            <S.Product_CardInfo>
+              <S.Product_CardTitle>{product.nome}</S.Product_CardTitle>
+
+              <S.Product_CardPrice>R$ {product.preco}</S.Product_CardPrice>
+
+              <S.Product_CardFooter>
                 <span className={`product-category--${product.categoria}`}>
                   {product.categoria}
                 </span>
 
-                <button className="product-card-count" >
-                  Quantidade: {product.quantidade}
-                </button>
+                <S.Product_CardCount>
+                  Quantidade: {quantidade ? quantidade : 'Produto em estoque'}
+                </S.Product_CardCount>
 
-                <span className="promotion-card__link"
-                >
+                <S.Product_ButtonBuy onClick={handleBuy}>
                   Comprar
-                </span>
+                </S.Product_ButtonBuy>
 
-                <button className="promotion-card__delete-button" onClick={() => handleDelete()}>Deletar</button>
-
-                <Link to={`/editar-produto/${product.id}`} className="promotion-card__edit-button">
+                {/* <Link
+                  to={`/editar-produto/${product.id}`}
+                  className="promotion-card__edit-button"
+                >
                   Editar
                 </Link>
 
-              </footer>
-            </div>
-          </div>
-
-        </section>
-      </div>
-
-    </>
-  )
+                <S.Product_ButtonDelete onClick={handleDelete}>
+                  Deletar
+                </S.Product_ButtonDelete> */}
+              </S.Product_CardFooter>
+            </S.Product_CardInfo>
+          </S.Product_Card>
+        </S.List_Product>
+      </S.Container_Home>
+    </div>
+  );
 }

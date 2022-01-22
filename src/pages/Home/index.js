@@ -1,24 +1,52 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Cards from '../../components/Cards';
-import store from '../../assets/store_black.svg'
-import "./styles.css";
+import { Footer } from '../../components/Footer';
+import * as S from "./styles";
+import axios from 'axios';
+import ListaCategorias from '../../components/ListaCategorias';
+import { Link } from 'react-router-dom';
+import search from '../../assets/search.svg';
 
-export default function Home({products, loading}) {
- 
-  
+export default function Home() {
+  const [contador, setContador] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/produtos')
+      .then((response) => {
+        setContador(response.data)
+      });
+  }, []);
+
   return (
-    <>
-      <div className="container_home">
-        <div className="titulo-home">
-          <h2><img src={store} alt="" />Shop</h2> 
-          <p>Mostrando resultados: </p>
-        </div>
-        
-        <section className="list-product">
-          <Cards products={products} />
-        </section>
+    <div>
+      <S.Container_Home>
+        <S.Header>
+          <S.Title_Home>
+            <S.Title>Shop</S.Title>
+            <S.Description>
+              Mostrando resultados: {contador.length}
+            </S.Description>
+          </S.Title_Home>
 
-      </div>
-    </>
+          <div className="sidebar">
+            <Link to="cadastro-produto">Cadastrar Produto</Link>
+            <Link to="bot">Bot</Link>
+          </div>
+
+          <S.BoxSearch>
+            <img src={search} alt="" />
+            <input type="text" placeholder="Buscar Produto" />
+          </S.BoxSearch>
+        </S.Header>
+
+        <ListaCategorias />
+
+        <S.List_Product>
+          <Cards url={"/produto"} />
+        </S.List_Product >
+
+      </S.Container_Home>
+      <Footer />
+    </div>
   )
 }

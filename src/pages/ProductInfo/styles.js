@@ -1,65 +1,64 @@
-.container_home {
-	/* margin: 0 auto;
-	min-height: 100vh;
-	border: 1px solid #222; */
-	width: min(90vw, 800px);
-	margin: auto;
-}
+import styled from "styled-components";
 
-.title-home {
-	margin-top: 15px;
+export const Container_Home = styled.div`
+  width: min(90vw, 800px);
+	margin: auto;
+`;
+
+export const Title_Home = styled.div`
+  margin-top: 15px;
 	padding: 5px;
 	margin-bottom: 10px;
-}
+`;
 
-.title-home h2 {
-	font-weight: 700;
+export const Title = styled.h2`
+ 	font-weight: 700;
 	font-size: 1.9rem;
-}
+`;
 
-/* section */
+export const List_Product = styled.section`
+  margin-top: 20px;
+`;
 
-.list-product {
-	margin-top: 20px;
-}
-
-.product-card {
-	border-radius: 8px;
+export const Product_Card = styled.section`
+  border-radius: 8px;
 	border: 1px solid #c3c3c3;
 	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
 	display: flex;
 	padding: 15px;
 	align-items: flex-start;
-}
+`;
 
-.product-card-image {
-	max-width: 100px;
+export const Product_CardImage = styled.img`
+ 	max-width: 100px;
 	margin-right: 20px;
-}
+`;
 
-.product-card-info {
+export const Product_CardInfo = styled.div`
 	flex-grow: 1;
-}
+`;
 
-.product-card-title{
-  font-size: 16px;
+export const Product_CardTitle = styled.h2`
+	font-size: 16px;
   color: #2C2E50;
   font-weight: 500;
-}
+`;
 
-.product-card-price {
+export const Product_CardPrice = styled.span`
 	font-size: 26px;
 	font-weight: 700;
 	color: #000cff;
-}
-.product-card-footer {
-	display: flex;
-	align-items: center;
-}
+`;
 
-.product-card-footer span {
+export const Product_CardFooter = styled.div`
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  span {
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 18px;
 	padding: 2px 6px;
 	border-radius: 3px;
 	font-weight: 400;
@@ -96,26 +95,29 @@
 	background-color: #dc245bd4;
 }
 
-.product-card-count{
+`;
+
+export const Product_CardCount = styled.span`
   margin-left: auto;
   margin-right: 20px;
   color: #2C2E50;
   background-color: unset;
   border: unset;
   white-space: nowrap;
-}
+`;
 
-.promotion-card__link {
-  border: 1px solid #000cff;
+export const Product_ButtonBuy = styled.button`
+ 	border: none;
+  color: #fff;
   border-radius: 4px;
-  color: #000cff;
+  background-color: #4bb995;
   text-decoration: none;
-  padding: 8px 10px;
-  white-space: nowrap;
+  padding: 15px 25px;
+  margin-left: 10px;
 	cursor: pointer;
-}
+`;
 
-.promotion-card__edit-button {
+export const Product_ButtonEdit = styled.button`
   border: 1px solid #000cff;
   border-radius: 4px;
   color: #000cff;
@@ -123,9 +125,10 @@
   padding: 8px 10px;
   margin-left: 10px;
 	cursor: pointer;
-}
-.promotion-card__delete-button {
-	border: none;
+`;
+
+export const Product_ButtonDelete = styled.button`
+  border: none;
   color: #fff;
   border-radius: 4px;
   background-color: #ff004c;
@@ -133,4 +136,9 @@
   padding: 8px 10px;
   margin-left: 10px;
 	cursor: pointer;
-}
+`;
+
+
+
+
+

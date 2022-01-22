@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './styles.css';
 import ImgNull from '../../assets/card_background.png';
+import * as S from "./styles"
 import { Link } from 'react-router-dom'
 
 export default function Cards() {
@@ -16,34 +16,33 @@ export default function Cards() {
   }, []);
 
   return (
-    <>
-      <div className="container_card">
-        {products.map((product) => (
-
-          <Link to={`/produto/${product.id}`}>
-            <div className="card" key={product?.id}>
-              <div className="card-img">
+    <div>
+      <S.Contaner_Card>
+        {products.map((product, index) => (
+          <Link key={product.id} to={`/produto/${product.id}`}>
+            <S.Card >
+              <S.Card_Img>
                 {
                   product.urlImg === '' ? (
                     <img src={ImgNull} alt="img null" />
                   ) : (
-                    <img src={product.urlImg} alt="img null" />
+                    <img src={product.urlImg} alt={product.name} />
                   )
                 }
-              </div>
-              <div className="card-info">
+              </S.Card_Img>
+              <S.Card_Info>
                 <span className={`product-category--${product.categoria}`}>{product.categoria}</span>
                 <h1>{product.nome}</h1>
-              </div>
+              </S.Card_Info>
 
-              <div className="card-price">
+              <S.Card_Price>
                 <span>R$ {product.preco}</span>
                 <button>Comprar</button>
-              </div>
-            </div>
+              </S.Card_Price>
+            </S.Card>
           </Link>
         ))}
-      </div>
-    </>
+      </S.Contaner_Card>
+    </div>
   )
 }
