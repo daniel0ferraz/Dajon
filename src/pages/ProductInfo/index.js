@@ -5,7 +5,7 @@ import Sacola from '../../assets/local_mall_black_24dp.svg';
 import { Link } from 'react-router-dom';
 import Toast from '../../components/Toast/index';
 import { toast } from 'react-toastify';
-import './styles.css';
+// import './styles.css';
 import * as S from './styles';
 import api from '../../service/api';
 
@@ -34,7 +34,7 @@ export default function ProductInfo() {
       const response = await api.delete(`produtos/${id}`);
       if (response && (response.status === 201 || response.status === 200)) {
         toast(`Produto do Id=(${id}) excluido`);
-        history.push('/');
+        history.push('/home');
       } else if (!response) {
         alert.error('Erro ao excluir produto');
       }
@@ -79,10 +79,9 @@ export default function ProductInfo() {
 
         <S.List_Product>
           <S.Product_Card>
-            <img
+            <S.Product_CardImage
               src={product.urlImg}
               alt={product.title}
-              className="product-card-image"
             />
             <S.Product_CardInfo>
               <S.Product_CardTitle>{product.nome}</S.Product_CardTitle>

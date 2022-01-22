@@ -70,7 +70,7 @@ export default function ProductRegistration() {
       );
       if (response && (response.status === 201 || response.status === 200)) {
         toast.success(id, 'Atualizado com sucesso!');
-        history.push('/');
+        history.push(`/produto/${id}`);
       } else if (!response) {
         toast.error('Erro ao Atualizar produto');
       }

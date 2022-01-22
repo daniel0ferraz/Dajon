@@ -11,11 +11,10 @@ import Login from './../pages/Login/index';
 export default function Routes() {
   return (
     <Router>
-      {/* // <Header /> */}
+     <Header />
       <Switch>
-        <Route path="/" component={Login} />
+        <Route path="/Login" component={Login} />
         <Route path="/Home" exact component={Home} />
-        <Route path="/home" component={Home} />
         <Route path="/categoria/:id" component={Categoria} />
         <Route path="/produto/:id" component={ProductInfo} />
         <Route path="/editar-produto/:id" component={ProductRegistration} />
