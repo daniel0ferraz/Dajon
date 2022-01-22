@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Cards from '../../components/Cards';
 import { Footer } from '../../components/Footer';
 import * as S from "./styles";
-import axios from 'axios';
 import ListaCategorias from '../../components/ListaCategorias';
 import { Link } from 'react-router-dom';
 import search from '../../assets/search.svg';
+import api from './../../service/api';
 
 export default function Home() {
   const [contador, setContador] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/produtos')
+    api.get('produtos')
       .then((response) => {
         setContador(response.data)
       });
@@ -28,11 +28,6 @@ export default function Home() {
             </S.Description>
           </S.Title_Home>
 
-          <div className="sidebar">
-            <Link to="cadastro-produto">Cadastrar Produto</Link>
-            <Link to="bot">Bot</Link>
-          </div>
-
           <S.BoxSearch>
             <img src={search} alt="" />
             <input type="text" placeholder="Buscar Produto" />
@@ -41,9 +36,20 @@ export default function Home() {
 
         <ListaCategorias />
 
-        <S.List_Product>
-          <Cards url={"/produto"} />
-        </S.List_Product >
+        <div className="teste">
+
+          <S.Sidebar>
+            <div className="nav">
+
+            </div>
+
+          </S.Sidebar>
+
+          <S.List_Product>
+            <Cards url={"/produto"} />
+          </S.List_Product >
+
+        </div>
 
       </S.Container_Home>
       <Footer />
