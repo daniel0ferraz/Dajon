@@ -56,11 +56,11 @@ export default function ProductInfo() {
       });
 
       if (response.data.quantidade) {
-        toast.success('Produto Comprado!', product.nome)
+        toast.success('Produto Comprado!', product.nome);
         setQuantidade(quantidade - 1);
-      } else if (response.data.quantidade <= 0 ) {
+      } else if (response.data.quantidade <= 0) {
         toast.error('Produto abaixo do Estoque!');
-      } 
+      }
     } catch (e) {
       toast.error('erro requisção', e);
     }
@@ -68,7 +68,7 @@ export default function ProductInfo() {
 
   return (
     <div>
-      <Toast/>
+      <Toast />
       <S.Container_Home>
         <S.Title_Home>
           <S.Title>
@@ -79,10 +79,7 @@ export default function ProductInfo() {
 
         <S.List_Product>
           <S.Product_Card>
-            <S.Product_CardImage
-              src={product.urlImg}
-              alt={product.title}
-            />
+            <S.Product_CardImage src={product.urlImg} alt={product.title} />
             <S.Product_CardInfo>
               <S.Product_CardTitle>{product.nome}</S.Product_CardTitle>
 
@@ -101,7 +98,7 @@ export default function ProductInfo() {
                   Comprar
                 </S.Product_ButtonBuy>
 
-                <Link
+                {/*<Link
                   to={`/editar-produto/${product.id}`}
                   className="promotion-card__edit-button"
                 >
@@ -111,6 +108,7 @@ export default function ProductInfo() {
                 <S.Product_ButtonDelete onClick={handleDelete}>
                   Deletar
                 </S.Product_ButtonDelete>
+                */}
               </S.Product_CardFooter>
             </S.Product_CardInfo>
           </S.Product_Card>
