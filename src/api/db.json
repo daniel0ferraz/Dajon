@@ -124,5 +124,25 @@
       "quantidade": "",
       "id": 36
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Daniel Ferraz Coelho",
+      "idade": 21,
+      "telefone": "21999540152",
+      "profissao": "Programador",
+      "cpf": "000.544.666.98",
+      "senha": "123456",
+      "imgProfile": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FFicheiro%3ABreezeicons-actions-22-im-user.svg&psig=AOvVaw0MMCjpuIV1Thez4k3Am-L6&ust=1639949078022000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDc9MKk7vQCFQAAAAAdAAAAABAD",
+      "endereco": [
+        {
+          "cep": "45985-290",
+          "rua": "Marquês de Barbacena",
+          "bairro": "Centro",
+          "estado": "Bahia"
+        }
+      ]
+    }
   ]
 }
