@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Header = styled.header`
   min-width: 100%;
@@ -9,7 +9,6 @@ export const Header = styled.header`
   opacity: 0.7;
   min-height: 60px;
   padding: 20px;
-
 `;
 
 export const TitleHeader = styled.h1`
@@ -19,39 +18,42 @@ export const TitleHeader = styled.h1`
 `;
 export const ImageHeader = styled.img`
   height: 2.4rem;
-  padding: 0px 3px 0 0
+  padding: 0px 3px 0 0;
 `;
 
 export const BoxInfo = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 `;
 
 export const UserInfo = styled.div`
+  //margin: 0px 0.7rem 0px 0px;
+  text-align: end;
 
-margin: 0px 0.7rem 0px 0px;
-text-align: end;
+  h3 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #ffffff;
+    font-weight: 700;
+  }
 
-h3 { 
-  margin: 0;
-  font-family: Roboto;
-  font-size: 1.2rem;
-  line-height: 18px;
-  color: #ffffff;
-  font-weight: 700;
-
-}
-
-span{
-  color: #ffffff;
-}
-
+  span {
+    color: #ffffff;
+    font-size: 13px;
+  }
 `;
 
 export const BoxUser = styled.div`
+  display: flex;
 
-img{
-    width: 40px;
-}
-  
+  div {
+    margin: 0 5px;
+  }
+  img {
+    width: 30px;
+  }
+  img.cart {
+  }
 `;
