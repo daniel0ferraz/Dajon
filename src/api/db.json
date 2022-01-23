@@ -114,6 +114,15 @@
       "dataEntrada": "21/01/2022",
       "quantidade": "",
       "id": 36
+    },
+    {
+      "nome": "Teste",
+      "preco": "0.0",
+      "categoria": "Calçados",
+      "urlImg": "",
+      "dataEntrada": "22/01/2022",
+      "quantidade": "10",
+      "id": 37
     }
   ],
   "users": [
@@ -134,6 +143,12 @@
           "estado": "Bahia"
         }
       ]
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
     }
   ]
 }

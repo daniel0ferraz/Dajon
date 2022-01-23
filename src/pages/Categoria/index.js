@@ -8,15 +8,7 @@ export default function Categoria() {
   const { id } = useParams();
   const { path } = useRouteMatch();
 
-  const [categorias, setCategorias] = useState([]);
-
-  useEffect(() => {
-    axios.get(`http://localhost:5000/produtos?categoria/${id}`)
-      .then((response) => {
-        setCategorias(response.data)
-        console.log("Categoria:", categorias.id);
-      });
-  }, [categorias.id, id]);
+  console.log('categoria', id);
 
   return (
     <div>
@@ -26,9 +18,9 @@ export default function Categoria() {
 
       <ListaCategorias />
 
-      <Route exact path={`/${path}/${id}`}>
-        <Cards url={``} />
+      <Route exact path={`${path}/`}>
+        <Cards url={`http://localhost:5000/produtos?categoria=${id}`} />
       </Route>
     </div>
-  )
+  );
 }
