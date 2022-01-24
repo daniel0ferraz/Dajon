@@ -30,6 +30,10 @@ export const Title_Home = styled.div`
 
 export const List_Product = styled.section`
   margin-top: 20px;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const Product_Card = styled.section`
@@ -43,6 +47,10 @@ export const Product_Card = styled.section`
 export const Product_CardImage = styled.img`
   max-width: 260px;
   margin-right: 20px;
+
+  @media (max-width: 900px) {
+    max-width: 200px;
+  }
 `;
 
 export const Product_CardInfo = styled.div`
@@ -78,6 +86,10 @@ export const Product_CardFooter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 
   span {
     font-size: 12px;
@@ -138,6 +150,13 @@ export const Product_ButtonBuy = styled.button`
   font-weight: 600;
   margin-left: 10px;
   cursor: pointer;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 15px 100px;
+    margin-top: 3px;
+  }
 `;
 
 export const Product_ButtonEdit = styled.button`

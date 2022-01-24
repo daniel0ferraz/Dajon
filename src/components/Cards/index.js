@@ -8,7 +8,7 @@ export default function Cards() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/produtos?_limit=12').then((response) => {
+    axios.get('http://localhost:5000/produtos?_limit=8').then((response) => {
       setProducts(response.data);
     });
   }, []);
