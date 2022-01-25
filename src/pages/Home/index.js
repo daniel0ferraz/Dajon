@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cards from '../../components/Cards';
 import { Footer } from '../../components/Footer';
-import * as S from "./styles";
+import * as S from './styles';
 import ListaCategorias from '../../components/ListaCategorias';
 import { Link } from 'react-router-dom';
 import search from '../../assets/search.svg';
@@ -11,10 +11,10 @@ export default function Home() {
   const [contador, setContador] = useState([]);
 
   useEffect(() => {
-    api.get('produtos')
-      .then((response) => {
-        setContador(response.data)
-      });
+    api.get('produtos').then((response) => {
+      setContador(response.data);
+      console.log(response.data);
+    });
   }, []);
 
   return (
@@ -37,22 +37,16 @@ export default function Home() {
         <ListaCategorias />
 
         <div className="teste">
-
           <S.Sidebar>
-            <div className="nav">
-
-            </div>
-
+            <div className="nav"></div>
           </S.Sidebar>
 
           <S.List_Product>
-            <Cards url={"/produto"} />
-          </S.List_Product >
-
+            <Cards />
+          </S.List_Product>
         </div>
-
       </S.Container_Home>
       <Footer />
     </div>
-  )
+  );
 }

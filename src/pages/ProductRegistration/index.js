@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import Toast from '../../components/Toast/index';
 import { toast } from 'react-toastify';
+import { dataAtualFormatada } from '../../utils/index';
 
 export default function ProductRegistration() {
   const { id } = useParams();
@@ -19,14 +20,6 @@ export default function ProductRegistration() {
       });
     }
   }, [id]);
-
-  function dataAtualFormatada() {
-    var data = new Date(),
-      dia = data.getDate().toString().padStart(2, '0'),
-      mes = (data.getMonth() + 1).toString().padStart(2, '0'), //+1 pois no getMonth Janeiro começa com zero.
-      ano = data.getFullYear();
-    return dia + '/' + mes + '/' + ano;
-  }
 
   const initalValues = {
     nome: '',
