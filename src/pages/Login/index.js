@@ -17,17 +17,19 @@ export default function Login() {
 
   function onSubmit(e) {
     e.preventDefault();
-    console.log('dados', values);
+    console.log('dados Post->', values);
   }
 
   const handleSubmit = async () => {
     try {
       const response = await axios.post('http://localhost:5000/users', values);
-      console.log(response.data);
-      if (response && (response.status === 201 || response.status === 200)) {
-        alert('buscado com sucesso!');
-      } else if (!response) {
-        alert('Erro ao buscar');
+
+      if (response.data.email) {
+        console.log('existe', response.data.email);
+        console.log('buscado com sucesso!');
+      } else {
+        console.log('Dados incorretos');
+        console.log('existe else->', response.data.email);
       }
     } catch (error) {
       console.log(error, '');

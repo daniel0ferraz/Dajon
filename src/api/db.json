@@ -30,7 +30,7 @@
       "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcados/sandalias-femininas/sandalia-camila-preto_121300_600_1.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 0,
-      "dataCompra": "24/01/2022"
+      "dataCompra": "25/01/2022"
     },
     {
       "id": 24,
@@ -40,7 +40,7 @@
       "urlImg": "https://images2.marisa.com.br/medias/sys_master/images/images/h6c/hce/13082060914718/COLAR-FEM-CR4810-DOU-10049089417-C1.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 10,
-      "dataCompra": "24/01/2022"
+      "dataCompra": "25/01/2022"
     },
     {
       "id": 25,
@@ -70,7 +70,7 @@
       "urlImg": "https://a-static.mlcdn.com.br/618x463/ventilador-de-mesa-e-parede-ultra-v-30b-6p-30cm-3-velocidades/magazineluiza/020470000/ecb55d5405630b2a387fe6751bf5a8f8.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 0,
-      "dataCompra": "23/01/2022"
+      "dataCompra": "25/01/2022"
     },
     {
       "id": 28,
@@ -87,19 +87,20 @@
       "nome": "Maria Tereza Gomes Rodrigues",
       "preco": "12.00",
       "categoria": "Roupas",
-      "urlImg": "https://scontent.frec7-1.fna.fbcdn.net/v/t39.30808-6/270745292_113150784566974_5209750750511205806_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHnjfCF4il0KFbubB92WLhECXcB0yMuGnYJdwHTIy4adlbKBTg0ny7kViozIalghX-HugWtzPKOZOQ7N3Feyp6Z&_nc_ohc=rbTuODtJT0IAX9Lr_7P&_nc_ht=scontent.frec7-1.fna&oh=00_AT-soGNOXTLoPn66Cx4iVD9pPuRz0LYYGCkBRcE9IN1fSA&oe=61F2DC33",
+      "urlImg": "",
       "dataEntrada": "23/01/2022",
       "quantidade": 0,
       "dataCompra": "25/01/2022"
     },
     {
+      "id": 39,
       "nome": "Daniel Ferraz Coelho",
       "preco": "100.00",
       "categoria": "Roupas",
       "urlImg": "https://scontent.frec7-1.fna.fbcdn.net/v/t39.30808-6/270745292_113150784566974_5209750750511205806_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHnjfCF4il0KFbubB92WLhECXcB0yMuGnYJdwHTIy4adlbKBTg0ny7kViozIalghX-HugWtzPKOZOQ7N3Feyp6Z&_nc_ohc=rbTuODtJT0IAX9Lr_7P&_nc_ht=scontent.frec7-1.fna&oh=00_AT-soGNOXTLoPn66Cx4iVD9pPuRz0LYYGCkBRcE9IN1fSA&oe=61F2DC33",
       "dataEntrada": "25/01/2022",
       "quantidade": "2",
-      "id": 39
+      "dataCompra": "25/01/2022"
     }
   ],
   "users": [
@@ -110,7 +111,8 @@
       "telefone": "21999540152",
       "profissao": "Programador",
       "cpf": "000.544.666.98",
-      "senha": "123456#",
+      "email": "daniel.ferraz@wansoft.com",
+      "password": "123456#",
       "imgProfile": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FFicheiro%3ABreezeicons-actions-22-im-user.svg&psig=AOvVaw0MMCjpuIV1Thez4k3Am-L6&ust=1639949078022000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDc9MKk7vQCFQAAAAAdAAAAABAD",
       "endereco": [
         {
@@ -122,10 +124,49 @@
       ]
     },
     {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
       "id": 2
     },
     {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
       "id": 3
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 5
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 6
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 7
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 8
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 9
+    },
+    {
+      "email": "Daniel0ferraz@outlook.com",
+      "password": "",
+      "id": 10
     }
   ]
 }
