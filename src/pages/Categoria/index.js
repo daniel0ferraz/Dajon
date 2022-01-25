@@ -1,22 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import ListaCategorias from '../../components/ListaCategorias';
 import Cards from '../../components/Cards';
-import { Route, useParams, useRouteMatch } from 'react-router-dom';
-import axios from 'axios';
+import {
+  Route,
+  useParams,
+  useRouteMatch,
+  Link,
+  Switch,
+} from 'react-router-dom';
+
+import api from '../../service/api';
 
 export default function Categoria() {
   const { id } = useParams();
-  const { path } = useRouteMatch();
-
-  const [categorias, setCategorias] = useState([]);
+  const { url, path } = useRouteMatch();
+  const [subcategorias, setSubCategorias] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/produtos?categoria/${id}`)
-      .then((response) => {
-        setCategorias(response.data)
-        console.log("Categoria:", categorias.id);
-      });
-  }, [categorias.id, id]);
+    api.get(`categorias/${id}`, (categoria) => {
+      setSubCategorias(categoria.setSubCategorias);
+    });
+  }, [id]);
 
   return (
     <div>
@@ -25,10 +29,21 @@ export default function Categoria() {
       </div>
 
       <ListaCategorias />
-
-      <Route exact path={`/${path}/${id}`}>
-        <Cards url={``} />
-      </Route>
+      <ul className="lista-categorias container flex">
+        {subcategorias.map((subcategoria) => (
+          <li
+            className={`lista-categorias__categoria lista-categorias__categoria--${id}`}
+            key={subcategoria}
+          >
+            <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
+          </li>
+        ))}
+      </ul>
+      <Switch>
+        <Route exact path={`${path}/`}>
+          <Cards url={`/produtos?categoria=${id}`} />
+        </Route>
+      </Switch>
     </div>
-  )
+  );
 }

@@ -29,16 +29,8 @@
       "categoria": "Calçados",
       "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcados/sandalias-femininas/sandalia-camila-preto_121300_600_1.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 0
-    },
-    {
-      "id": 21,
-      "nome": "Kit de colar e Brinco Coração - Fashion Biju",
-      "preco": "15.87",
-      "categoria": "Acessorios",
-      "urlImg": "https://a-static.mlcdn.com.br/618x463/kit-de-colar-e-brinco-coracao-fashion-biju/fashionbijuofficial/7008/afe013c589ad8e08b8b1101bc5a1e5c1.jpg",
-      "dataEntrada": "27/10/2021",
-      "quantidade": 0
+      "quantidade": 19,
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 24,
@@ -47,7 +39,8 @@
       "categoria": "Acessorios",
       "urlImg": "https://images2.marisa.com.br/medias/sys_master/images/images/h6c/hce/13082060914718/COLAR-FEM-CR4810-DOU-10049089417-C1.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10
+      "quantidade": 0,
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 25,
@@ -56,7 +49,6 @@
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/smart-tv-led-43-tcl-43s6500-full-hd-android-wi-fi-2-hdmi-1-usb/magazineluiza/193426800/5ac1d3781186045c00e83e80da36ebaa.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 8
     },
     {
       "id": 26,
@@ -65,7 +57,8 @@
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/radio-retro-vintage-am-fm-sw-usb-aux-bluetooth-bateria-recarregavel-madeira-estilo-antigo-altomex/svmix/7a571072c3e111eb9a934201ac18500e/93f9425213524f7fbe0dbf18bb704aa3.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": "10"
+      "quantidade": 0,
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 27,
@@ -74,7 +67,8 @@
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/ventilador-de-mesa-e-parede-ultra-v-30b-6p-30cm-3-velocidades/magazineluiza/020470000/ecb55d5405630b2a387fe6751bf5a8f8.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10
+      "quantidade": 0,
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 28,
@@ -83,7 +77,8 @@
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/forno-eletrico-de-bancada-britania-40l-bfe40pi/magazineluiza/226794700/e6eb20ba7fc766bb4ed31c2dde72a193.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 2219
+      "quantidade": 2220,
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 30,
@@ -91,7 +86,8 @@
       "categoria": "",
       "urlImg": "",
       "dataEntrada": "29/11/2021",
-      "quantidade": ""
+      "quantidade": "",
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 32,
@@ -104,8 +100,9 @@
     {
       "id": 34,
       "nome": "Maria Tereza Gomes Rodrigues",
-      "quantidade": "200",
-      "preco": "22"
+      "preco": "22",
+      "quantidade": 197,
+      "dataCompra": "23/01/2022"
     },
     {
       "id": 35,
@@ -123,6 +120,33 @@
       "dataEntrada": "21/01/2022",
       "quantidade": "",
       "id": 36
+    },
+    {
+      "nome": "Teste",
+      "preco": "0.0",
+      "categoria": "Calçados",
+      "urlImg": "",
+      "dataEntrada": "22/01/2022",
+      "quantidade": "10",
+      "id": 37
+    },
+    {
+      "nome": "Maria Tereza Gomes Rodrigues",
+      "preco": "12.00",
+      "categoria": "Roupas",
+      "urlImg": "https://scontent.frec7-1.fna.fbcdn.net/v/t39.30808-6/270745292_113150784566974_5209750750511205806_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHnjfCF4il0KFbubB92WLhECXcB0yMuGnYJdwHTIy4adlbKBTg0ny7kViozIalghX-HugWtzPKOZOQ7N3Feyp6Z&_nc_ohc=rbTuODtJT0IAX9Lr_7P&_nc_ht=scontent.frec7-1.fna&oh=00_AT-soGNOXTLoPn66Cx4iVD9pPuRz0LYYGCkBRcE9IN1fSA&oe=61F2DC33",
+      "dataEntrada": "23/01/2022",
+      "quantidade": "2",
+      "id": 38
+    },
+    {
+      "nome": "",
+      "preco": "200000",
+      "categoria": "",
+      "urlImg": "",
+      "dataEntrada": "23/01/2022",
+      "quantidade": "",
+      "id": 39
     }
   ],
   "users": [
@@ -143,6 +167,12 @@
           "estado": "Bahia"
         }
       ]
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
     }
   ]
 }

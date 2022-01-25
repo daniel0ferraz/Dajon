@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
 import { useHistory, useParams } from 'react-router';
 import { useState } from 'react/cjs/react.development';
-import Sacola from '../../assets/local_mall_black_24dp.svg';
-import { Link } from 'react-router-dom';
+import arrowLeft from '../../assets/chevron_left.svg';
+import productStock from '../../assets/production_quantity.svg';
+import check from '../../assets/check.svg';
 import Toast from '../../components/Toast/index';
 import { toast } from 'react-toastify';
 // import './styles.css';
 import * as S from './styles';
 import api from '../../service/api';
+import { dataAtualFormatada } from '../../utils/index';
+import { Link } from 'react-router-dom';
+import ListaCategorias from '../../components/ListaCategorias';
 
 export default function ProductInfo() {
   const { id } = useParams();
@@ -34,7 +38,7 @@ export default function ProductInfo() {
       const response = await api.delete(`produtos/${id}`);
       if (response && (response.status === 201 || response.status === 200)) {
         toast(`Produto do Id=(${id}) excluido`);
-        history.push('/');
+        history.push('/home');
       } else if (!response) {
         alert.error('Erro ao excluir produto');
       }
@@ -53,14 +57,30 @@ export default function ProductInfo() {
         urlImg: product.urlImg,
         dataEntrada: product.dataEntrada,
         quantidade: quantidade,
+        dataCompra: dataAtualFormatada(),
       });
 
       if (response.data.quantidade) {
-        toast.success('Produto Comprado!', product.nome)
+        toast.success(`Produto Comprado! ${product.nome}`);
+        console.log('produto', product.nome);
         setQuantidade(quantidade - 1);
-      } else if (response.data.quantidade <= 0 ) {
+
+        localStorage.setItem(
+          'comprado',
+          JSON.stringify({
+            id: product.id,
+            nome: product.nome,
+            preco: product.preco,
+            categoria: product.categoria,
+            urlImg: product.urlImg,
+            dataEntrada: product.dataEntrada,
+            quantidade: quantidade,
+            dataCompra: dataAtualFormatada(),
+          })
+        );
+      } else if (response.data.quantidade <= 0) {
         toast.error('Produto abaixo do Estoque!');
-      } 
+      }
     } catch (e) {
       toast.error('erro requisção', e);
     }
@@ -68,21 +88,20 @@ export default function ProductInfo() {
 
   return (
     <div>
-      <Toast/>
+      <Toast />
       <S.Container_Home>
         <S.Title_Home>
-          <S.Title>
-            <img src={Sacola} alt="sacola" />
-            Informações do produto
-          </S.Title>
+          <Link to="/">
+            <img src={arrowLeft} alt="" />
+            Voltar
+          </Link>
         </S.Title_Home>
 
         <S.List_Product>
           <S.Product_Card>
-            <S.Product_CardImage
-              src={product.urlImg}
-              alt={product.title}
-            />
+            <S.Product_CardImage src={product.urlImg} alt={product.title} />
+
+            
             <S.Product_CardInfo>
               <S.Product_CardTitle>{product.nome}</S.Product_CardTitle>
 
@@ -94,14 +113,26 @@ export default function ProductInfo() {
                 </span>
 
                 <S.Product_CardCount>
-                  Quantidade: {quantidade ? quantidade : 'Produto em estoque'}
+                  {!quantidade ? (
+                    <div className="">
+                      <S.Alert_Stock>
+                        <img src={productStock} alt="img null" />
+                        <span className="alert">indisponível</span>
+                      </S.Alert_Stock>
+                    </div>
+                  ) : (
+                    <S.Alert_Stock>
+                      <img src={check} alt="img null" />
+                      <span className="check">disponível</span>
+                    </S.Alert_Stock>
+                  )}
                 </S.Product_CardCount>
 
                 <S.Product_ButtonBuy onClick={handleBuy}>
                   Comprar
                 </S.Product_ButtonBuy>
 
-                {/* <Link
+
                   to={`/editar-produto/${product.id}`}
                   className="promotion-card__edit-button"
                 >
@@ -110,7 +141,6 @@ export default function ProductInfo() {
 
                 <S.Product_ButtonDelete onClick={handleDelete}>
                   Deletar
-                </S.Product_ButtonDelete> */}
               </S.Product_CardFooter>
             </S.Product_CardInfo>
           </S.Product_Card>

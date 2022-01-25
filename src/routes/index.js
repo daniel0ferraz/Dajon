@@ -7,19 +7,20 @@ import ProductInfo from '../pages/ProductInfo';
 import Categoria from '../pages/Categoria';
 import Nav from './../components/Nav/index';
 import Login from './../pages/Login/index';
+import Stock from '../pages/Stock/index';
 
 export default function Routes() {
   return (
     <Router>
-      {/* // <Header /> */}
+      <Header />
       <Switch>
-        <Route path="/" component={Login} />
-        <Route path="/Home" exact component={Home} />
-        <Route path="/home" component={Home} />
+        <Route path="/Login" component={Login} />
+        <Route path="/" exact component={Home} />
         <Route path="/categoria/:id" component={Categoria} />
         <Route path="/produto/:id" component={ProductInfo} />
         <Route path="/editar-produto/:id" component={ProductRegistration} />
         <Route path="/cadastro-produto" component={ProductRegistration} />
+        <Route path="/Estoque" component={Stock} />
         <Route path="/nav" component={Nav} />
 
         <Route component={() => <div>Page 404!</div>} />
