@@ -60,7 +60,7 @@
       "urlImg": "https://a-static.mlcdn.com.br/618x463/radio-retro-vintage-am-fm-sw-usb-aux-bluetooth-bateria-recarregavel-madeira-estilo-antigo-altomex/svmix/7a571072c3e111eb9a934201ac18500e/93f9425213524f7fbe0dbf18bb704aa3.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 10,
-      "dataCompra": "23/01/2022"
+      "dataCompra": "25/01/2022"
     },
     {
       "id": 27,
@@ -89,8 +89,17 @@
       "categoria": "Roupas",
       "urlImg": "https://scontent.frec7-1.fna.fbcdn.net/v/t39.30808-6/270745292_113150784566974_5209750750511205806_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHnjfCF4il0KFbubB92WLhECXcB0yMuGnYJdwHTIy4adlbKBTg0ny7kViozIalghX-HugWtzPKOZOQ7N3Feyp6Z&_nc_ohc=rbTuODtJT0IAX9Lr_7P&_nc_ht=scontent.frec7-1.fna&oh=00_AT-soGNOXTLoPn66Cx4iVD9pPuRz0LYYGCkBRcE9IN1fSA&oe=61F2DC33",
       "dataEntrada": "23/01/2022",
-      "quantidade": 2,
-      "dataCompra": "24/01/2022"
+      "quantidade": 0,
+      "dataCompra": "25/01/2022"
+    },
+    {
+      "nome": "Daniel Ferraz Coelho",
+      "preco": "100.00",
+      "categoria": "Roupas",
+      "urlImg": "https://scontent.frec7-1.fna.fbcdn.net/v/t39.30808-6/270745292_113150784566974_5209750750511205806_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHnjfCF4il0KFbubB92WLhECXcB0yMuGnYJdwHTIy4adlbKBTg0ny7kViozIalghX-HugWtzPKOZOQ7N3Feyp6Z&_nc_ohc=rbTuODtJT0IAX9Lr_7P&_nc_ht=scontent.frec7-1.fna&oh=00_AT-soGNOXTLoPn66Cx4iVD9pPuRz0LYYGCkBRcE9IN1fSA&oe=61F2DC33",
+      "dataEntrada": "25/01/2022",
+      "quantidade": "2",
+      "id": 39
     }
   ],
   "users": [

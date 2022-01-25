@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+
 import ImgNull from '../../assets/card_background.png';
 import * as S from './styles';
 import { Link } from 'react-router-dom';
+import api from '../../service/api';
 
 export default function Cards() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/produtos?_limit=8').then((response) => {
+    api.get('produtos?_limit=8').then((response) => {
       setProducts(response.data);
     });
   }, []);

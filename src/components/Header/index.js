@@ -21,12 +21,12 @@ export default function Header() {
 
           <S.BoxUser>
             <div className="">
-              <a href="minha-conta">
+              <a href="/minha-conta">
                 <img src={User} alt="myAccount" />
               </a>
             </div>
             <div className="">
-              <a href="minhas-compras">
+              <a href="/minhas-compras">
                 <div className="countItens">{contador}</div>
                 <img className="cart" src={cart} alt="sacola" />
               </a>
