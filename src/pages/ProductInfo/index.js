@@ -100,6 +100,8 @@ export default function ProductInfo() {
         <S.List_Product>
           <S.Product_Card>
             <S.Product_CardImage src={product.urlImg} alt={product.title} />
+
+            
             <S.Product_CardInfo>
               <S.Product_CardTitle>{product.nome}</S.Product_CardTitle>
 
@@ -130,7 +132,7 @@ export default function ProductInfo() {
                   Comprar
                 </S.Product_ButtonBuy>
 
-                {/*<Link
+
                   to={`/editar-produto/${product.id}`}
                   className="promotion-card__edit-button"
                 >
@@ -139,8 +141,6 @@ export default function ProductInfo() {
 
                 <S.Product_ButtonDelete onClick={handleDelete}>
                   Deletar
-                </S.Product_ButtonDelete>
-                */}
               </S.Product_CardFooter>
             </S.Product_CardInfo>
           </S.Product_Card>

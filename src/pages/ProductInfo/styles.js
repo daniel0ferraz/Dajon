@@ -51,6 +51,9 @@ export const Product_CardImage = styled.img`
   @media (max-width: 900px) {
     max-width: 200px;
   }
+
+ 	max-width: 100px;
+	margin-right: 20px;
 `;
 
 export const Product_CardInfo = styled.div`
