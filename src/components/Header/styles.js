@@ -47,6 +47,21 @@ export const UserInfo = styled.div`
 
 export const BoxUser = styled.div`
   display: flex;
+  align-items: center;
+
+  .countItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6767;
+    color: #ffffff;
+    width: 18px;
+    height: 18px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
 
   div {
     margin: 0 5px;

@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import Toast from '../../components/Toast/index';
 import { toast } from 'react-toastify';
 import { dataAtualFormatada } from '../../utils/index';
+import NavHeader from '../../components/NavHeader';
 
 export default function ProductRegistration() {
   const { id } = useParams();
@@ -86,6 +87,7 @@ export default function ProductRegistration() {
     <div>
       <S.ContainerForm>
         <Toast />
+        <NavHeader />
 
         {/* {id && <div>id: {id}</div>} */}
 

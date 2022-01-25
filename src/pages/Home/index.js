@@ -13,7 +13,6 @@ export default function Home() {
   useEffect(() => {
     api.get('produtos').then((response) => {
       setContador(response.data);
-      console.log(response.data);
     });
   }, []);
 

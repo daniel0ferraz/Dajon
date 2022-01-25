@@ -4,6 +4,7 @@ import Sacola from '../../assets/local_mall_white_24dp.svg';
 import User from '../../assets/person.svg';
 import cart from '../../assets/cart_white.svg';
 export default function Header() {
+  const contador = 10;
   return (
     <div>
       <S.Header>
@@ -20,10 +21,15 @@ export default function Header() {
 
           <S.BoxUser>
             <div className="">
-              <img src={User} alt="" />
+              <a href="minha-conta">
+                <img src={User} alt="myAccount" />
+              </a>
             </div>
             <div className="">
-              <img className="cart" src={cart} alt="sacola" />
+              <a href="minhas-compras">
+                <div className="countItens">{contador}</div>
+                <img className="cart" src={cart} alt="sacola" />
+              </a>
             </div>
           </S.BoxUser>
         </S.BoxInfo>

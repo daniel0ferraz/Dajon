@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as S from './styles';
-import api from './../../service/api';
+
 import axios from 'axios';
 
 export default function Login() {
@@ -55,7 +55,7 @@ export default function Login() {
           />
         </S.FormGroup>
 
-        <S.Button onClick={onSubmit}>Entrar</S.Button>
+        <S.Button onClick={handleSubmit}>Entrar</S.Button>
       </S.Form>
     </S.Container>
   );

@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import * as S from './styles';
 import Inventory from '../../assets/inventory.svg';
 import Money_white from '../../assets/money_white.svg';
 import ArrowUp from '../../assets/arrow_circle_up.svg';
 import ArrowDown from '../../assets/arrow_circle_down.svg';
-import api from '../../service/api';
+import NavHeader from '../../components/NavHeader';
 
 export default function Stock() {
-  const [result, setResult] = useState([]);
-
   return (
     <S.Container_Stock>
+      <NavHeader />
       <div className="row">
         <S.CardsItens>
           <S.CardHeader>
