@@ -3,7 +3,6 @@ import Cards from '../../components/Cards';
 import { Footer } from '../../components/Footer';
 import * as S from './styles';
 import ListaCategorias from '../../components/ListaCategorias';
-import { Link } from 'react-router-dom';
 import search from '../../assets/search.svg';
 import api from './../../service/api';
 

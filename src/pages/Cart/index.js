@@ -2,13 +2,15 @@ import React from 'react';
 import * as S from './styles';
 import image from '../../assets/production_quantity.svg';
 import close from '../../assets/close.svg';
+import { useHistory } from 'react-router-dom';
 
 export default function Cart() {
+  const history = useHistory();
   const getProduct = JSON.parse(localStorage.getItem('comprado'));
   console.log('getPRd', getProduct);
 
   if (getProduct === null) {
-    alert('voce n possui nenhhuma compra');
+    history.push('');
   }
   return (
     <S.Container_Home>

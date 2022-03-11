@@ -11,6 +11,7 @@ import * as S from './styles';
 import api from '../../service/api';
 import { dataAtualFormatada } from '../../utils/index';
 import NavHeader from '../../components/NavHeader';
+import { formatToBRL } from 'brazilian-values';
 
 export default function ProductInfo() {
   const { id } = useParams();
@@ -52,7 +53,7 @@ export default function ProductInfo() {
       const response = await api.put(`produtos/${id}`, {
         id: product.id,
         nome: product.nome,
-        preco: product.preco,
+        preco: formatToBRL(product.preco),
         categoria: product.categoria,
         urlImg: product.urlImg,
         dataEntrada: product.dataEntrada,
@@ -69,7 +70,7 @@ export default function ProductInfo() {
           JSON.stringify({
             id: product.id,
             nome: product.nome,
-            preco: product.preco,
+            preco: formatToBRL(product.preco),
             categoria: product.categoria,
             urlImg: product.urlImg,
             dataEntrada: product.dataEntrada,
@@ -96,7 +97,9 @@ export default function ProductInfo() {
             <S.Product_CardInfo>
               <S.Product_CardTitle>{product.nome}</S.Product_CardTitle>
 
-              <S.Product_CardPrice>R$ {product.preco}</S.Product_CardPrice>
+              <S.Product_CardPrice>
+                {formatToBRL(product.preco)}
+              </S.Product_CardPrice>
 
               <S.Product_CardFooter>
                 <span className={`product-category--${product.categoria}`}>

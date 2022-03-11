@@ -4,6 +4,7 @@ import ImgNull from '../../assets/card_background.png';
 import * as S from './styles';
 import { Link } from 'react-router-dom';
 import api from '../../service/api';
+import { formatToBRL } from 'brazilian-values';
 
 export default function Cards() {
   const [products, setProducts] = useState([]);
@@ -35,7 +36,7 @@ export default function Cards() {
               </S.Card_Info>
 
               <S.Card_Price>
-                <span>R$ {product.preco}</span>
+                <span>{formatToBRL(product.preco)}</span>
                 <button>Comprar</button>
               </S.Card_Price>
             </S.Card>

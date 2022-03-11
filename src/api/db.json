@@ -25,12 +25,12 @@
     {
       "id": 17,
       "nome": "Perfecta - Sandália Preto com Elástico",
-      "preco": "59.90",
+      "preco": "R$ 59,90",
       "categoria": "Calçados",
       "urlImg": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/calcados/sandalias-femininas/sandalia-camila-preto_121300_600_1.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 0,
-      "dataCompra": "25/01/2022"
+      "dataCompra": "11/03/2022"
     },
     {
       "id": 24,
@@ -39,8 +39,8 @@
       "categoria": "Acessorios",
       "urlImg": "https://images2.marisa.com.br/medias/sys_master/images/images/h6c/hce/13082060914718/COLAR-FEM-CR4810-DOU-10049089417-C1.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10,
-      "dataCompra": "25/01/2022"
+      "quantidade": 9,
+      "dataCompra": "06/02/2022"
     },
     {
       "id": 25,
@@ -50,7 +50,7 @@
       "urlImg": "https://a-static.mlcdn.com.br/618x463/smart-tv-led-43-tcl-43s6500-full-hd-android-wi-fi-2-hdmi-1-usb/magazineluiza/193426800/5ac1d3781186045c00e83e80da36ebaa.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 7,
-      "dataCompra": "24/01/2022"
+      "dataCompra": "11/03/2022"
     },
     {
       "id": 26,
@@ -59,8 +59,8 @@
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/radio-retro-vintage-am-fm-sw-usb-aux-bluetooth-bateria-recarregavel-madeira-estilo-antigo-altomex/svmix/7a571072c3e111eb9a934201ac18500e/93f9425213524f7fbe0dbf18bb704aa3.jpg",
       "dataEntrada": "27/10/2021",
-      "quantidade": 10,
-      "dataCompra": "25/01/2022"
+      "quantidade": 9,
+      "dataCompra": "02/02/2022"
     },
     {
       "id": 27,
@@ -75,12 +75,12 @@
     {
       "id": 28,
       "nome": "Forno Elétrico de Bancada Britânia 40L - BFE40PI",
-      "preco": "299.90",
+      "preco": "R$ 299,90",
       "categoria": "Eletronicos",
       "urlImg": "https://a-static.mlcdn.com.br/618x463/forno-eletrico-de-bancada-britania-40l-bfe40pi/magazineluiza/226794700/e6eb20ba7fc766bb4ed31c2dde72a193.jpg",
       "dataEntrada": "27/10/2021",
       "quantidade": 2207,
-      "dataCompra": "24/01/2022"
+      "dataCompra": "11/03/2022"
     },
     {
       "id": 38,
@@ -90,7 +90,7 @@
       "urlImg": "",
       "dataEntrada": "23/01/2022",
       "quantidade": 0,
-      "dataCompra": "25/01/2022"
+      "dataCompra": "26/01/2022"
     },
     {
       "id": 39,
