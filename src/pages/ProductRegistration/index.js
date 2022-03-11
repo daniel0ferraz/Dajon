@@ -7,6 +7,7 @@ import Toast from '../../components/Toast/index';
 import { toast } from 'react-toastify';
 import { dataAtualFormatada } from '../../utils/index';
 import NavHeader from '../../components/NavHeader';
+import { formatToBRL } from 'brazilian-values';
 
 export default function ProductRegistration() {
   const { id } = useParams();
@@ -24,7 +25,7 @@ export default function ProductRegistration() {
 
   const initalValues = {
     nome: '',
-    preco: Number,
+    preco: formatToBRL(),
     categoria: '',
     urlImg: '',
     dataEntrada: dataAtualFormatada(),

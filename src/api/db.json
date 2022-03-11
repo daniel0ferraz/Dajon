@@ -101,6 +101,33 @@
       "dataEntrada": "25/01/2022",
       "quantidade": "2",
       "dataCompra": "25/01/2022"
+    },
+    {
+      "nome": "",
+      "preco": "2",
+      "categoria": "",
+      "urlImg": "",
+      "dataEntrada": "11/03/2022",
+      "quantidade": "",
+      "id": 40
+    },
+    {
+      "nome": "",
+      "preco": "2",
+      "categoria": "",
+      "urlImg": "",
+      "dataEntrada": "11/03/2022",
+      "quantidade": "",
+      "id": 41
+    },
+    {
+      "nome": "Kit de colar e Brinco Coração - Fashion Biju",
+      "preco": "22222222222",
+      "categoria": "",
+      "urlImg": "dad",
+      "dataEntrada": "11/03/2022",
+      "quantidade": "1000",
+      "id": 42
     }
   ],
   "users": [
